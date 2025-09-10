@@ -18,7 +18,7 @@ import java.util.Collections;
 
 public class AraucariaPressurePlateBlock extends PressurePlateBlock {
 	public AraucariaPressurePlateBlock() {
-		super(Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.TERRACOTTA_CYAN).sound(SoundType.WOOD).strength(2f, 3f));
+		super(Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.TERRACOTTA_CYAN).sound(SoundType.WOOD).strength(2f, 3f).noCollission());
 	}
 
 	@Override

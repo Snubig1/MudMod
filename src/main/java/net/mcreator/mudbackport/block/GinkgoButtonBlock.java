@@ -18,7 +18,7 @@ import java.util.Collections;
 
 public class GinkgoButtonBlock extends WoodButtonBlock {
 	public GinkgoButtonBlock() {
-		super(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.TERRACOTTA_YELLOW).sound(SoundType.WOOD).strength(2f, 3f));
+		super(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.TERRACOTTA_YELLOW).sound(SoundType.WOOD).strength(2f, 3f).noCollission());
 	}
 
 	@Override

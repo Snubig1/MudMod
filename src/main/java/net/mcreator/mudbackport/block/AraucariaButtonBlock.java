@@ -18,7 +18,7 @@ import java.util.Collections;
 
 public class AraucariaButtonBlock extends WoodButtonBlock {
 	public AraucariaButtonBlock() {
-		super(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.TERRACOTTA_CYAN).sound(SoundType.WOOD).strength(2f, 3f));
+		super(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.TERRACOTTA_CYAN).sound(SoundType.WOOD).strength(2f, 3f).noCollission());
 	}
 
 	@Override
