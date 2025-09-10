@@ -2,6 +2,7 @@
 package net.mcreator.mudbackport.block;
 
 import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -17,7 +18,7 @@ import java.util.Collections;
 
 public class GinkgoLeavesBlock extends LeavesBlock {
 	public GinkgoLeavesBlock() {
-		super(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(0.2f).noOcclusion());
+		super(BlockBehaviour.Properties.of(Material.LEAVES, MaterialColor.TERRACOTTA_YELLOW).sound(SoundType.GRASS).strength(0.2f).noOcclusion());
 	}
 
 	@Override

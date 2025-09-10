@@ -2,6 +2,7 @@
 package net.mcreator.mudbackport.block;
 
 import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -18,7 +19,7 @@ import java.util.Collections;
 
 public class AraucariaStairsBlock extends StairBlock {
 	public AraucariaStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(3f, 2f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.TERRACOTTA_CYAN).sound(SoundType.WOOD).strength(3f, 2f).dynamicShape());
 	}
 
 	@Override

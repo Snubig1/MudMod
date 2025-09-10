@@ -63,7 +63,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "LIGHT_GRAY_TERRACOTTA",
     "creativePickItem": {
       "value": ""
     },
