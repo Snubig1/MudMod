@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mud_backport:blocks/image",
+    "up": "mud_backport:blocks/image",
+    "north": "mud_backport:blocks/image",
+    "east": "mud_backport:blocks/image",
+    "south": "mud_backport:blocks/image",
+    "west": "mud_backport:blocks/image",
+    "particle": "mud_backport:blocks/image"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_fv": 39,
+  "_type": "itemextension",
+  "definition": {
+    "item": {
+      "value": "Items.POTIONITEM"
+    },
+    "enableFuel": false,
+    "fuelPower": {
+      "fixedValue": 1600.0
+    },
+    "hasDispenseBehavior": true,
+    "dispenseSuccessCondition": {
+      "name": "MudCreationDispenseSuccessfullyIf"
+    },
+    "dispenseResultItemstack": {
+      "name": "MudCreationOnDispenseAttemptWithResult"
+    },
+    "compostLayerChance": 0.0
+  }
+}

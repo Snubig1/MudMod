@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mud_backport:mud"
+    },
+    {
+      "item": "mud_backport:roots"
+    }
+  ],
+  "result": {
+    "item": "mud_backport:muddy_roots",
+    "count": 1
+  }
+}

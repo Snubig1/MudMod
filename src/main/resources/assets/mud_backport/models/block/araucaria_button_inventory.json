@@ -1,0 +1,6 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "texture": "mud_backport:blocks/araucaria_planks"
+  }
+}

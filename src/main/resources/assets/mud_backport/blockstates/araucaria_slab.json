@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mud_backport:block/araucaria_slab"
+    },
+    "type=top": {
+      "model": "mud_backport:block/araucaria_slab_top"
+    },
+    "type=double": {
+      "model": "mud_backport:block/araucaria_slab_full"
+    }
+  }
+}

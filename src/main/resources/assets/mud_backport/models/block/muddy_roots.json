@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mud_backport:blocks/muddy_mangrove_roots_top_texture_je1_be1",
+    "up": "mud_backport:blocks/muddy_mangrove_roots_top_texture_je1_be1",
+    "north": "mud_backport:blocks/muddy_mangrove_roots_side_texture_je1_be1",
+    "east": "mud_backport:blocks/muddy_mangrove_roots_side_texture_je1_be1",
+    "south": "mud_backport:blocks/muddy_mangrove_roots_side_texture_je1_be1",
+    "west": "mud_backport:blocks/muddy_mangrove_roots_side_texture_je1_be1",
+    "particle": "mud_backport:blocks/muddy_mangrove_roots_top_texture_je1_be1"
+  }
+}

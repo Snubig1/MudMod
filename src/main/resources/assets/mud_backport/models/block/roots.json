@@ -1,0 +1,11 @@
+{
+  "parent": "mud_backport:custom/roots",
+  "textures": {
+    "all": "mud_backport:blocks/roots_side",
+    "particle": "mud_backport:blocks/roots_side",
+    "0": "mud_backport:blocks/roots_reverse",
+    "1": "mud_backport:blocks/roots_side",
+    "2": "mud_backport:blocks/roots_top",
+    "missing": "mud_backport:blocks/"
+  }
+}

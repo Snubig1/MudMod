@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "mud_backport:blocks/gikgo_leaves",
+    "particle": "mud_backport:blocks/gikgo_leaves"
+  }
+}

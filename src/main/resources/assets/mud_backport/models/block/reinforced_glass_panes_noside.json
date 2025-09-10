@@ -1,0 +1,6 @@
+{
+  "parent": "block/template_glass_pane_noside",
+  "textures": {
+    "pane": "mud_backport:blocks/reinforced_glass_pane"
+  }
+}

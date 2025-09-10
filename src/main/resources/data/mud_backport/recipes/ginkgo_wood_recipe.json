@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "mud_backport:ginkgo_log"
+    },
+    "1": {
+      "item": "mud_backport:ginkgo_log"
+    },
+    "2": {
+      "item": "mud_backport:ginkgo_log"
+    },
+    "3": {
+      "item": "mud_backport:ginkgo_log"
+    }
+  },
+  "result": {
+    "item": "mud_backport:ginkgo_wood",
+    "count": 3
+  }
+}

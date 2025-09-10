@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "mud_backport:blocks/ginkgo_planks",
+    "particle": "mud_backport:blocks/ginkgo_planks"
+  }
+}

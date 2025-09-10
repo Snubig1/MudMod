@@ -1,0 +1,1554 @@
+{
+  "mod_elements": [
+    {
+      "name": "Mud",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/models/item/mud.json",
+          "src/main/resources/assets/mud_backport/models/block/mud.json",
+          "src/main/java/net/mcreator/mudbackport/block/MudBlock.java",
+          "src/main/resources/assets/mud_backport/blockstates/mud.json"
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "MudUpdateTick",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mudbackport/procedures/MudUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "PackedMud",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "packed_mud",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/models/block/packed_mud.json",
+          "src/main/resources/assets/mud_backport/blockstates/packed_mud.json",
+          "src/main/java/net/mcreator/mudbackport/block/PackedMudBlock.java",
+          "src/main/resources/assets/mud_backport/models/item/packed_mud.json"
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "PackedMudRecipe",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "packed_mud_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/packed_mud_recipe.json"
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "MudBricks",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_bricks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/models/item/mud_bricks.json",
+          "src/main/java/net/mcreator/mudbackport/block/MudBricksBlock.java",
+          "src/main/resources/assets/mud_backport/blockstates/mud_bricks.json",
+          "src/main/resources/assets/mud_backport/models/block/mud_bricks.json"
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "MudBrickSlab",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_brick_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/blockstates/mud_brick_slab.json",
+          "src/main/resources/assets/mud_backport/models/block/mud_brick_slab_full.json",
+          "src/main/java/net/mcreator/mudbackport/block/MudBrickSlabBlock.java",
+          "src/main/resources/assets/mud_backport/models/block/mud_brick_slab.json",
+          "src/main/resources/assets/mud_backport/models/block/mud_brick_slab_top.json",
+          "src/main/resources/assets/mud_backport/models/item/mud_brick_slab.json"
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "MudBrickStairs",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_brick_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/models/block/mud_brick_stairs_inner.json",
+          "src/main/resources/assets/mud_backport/models/block/mud_brick_stairs.json",
+          "src/main/resources/assets/mud_backport/blockstates/mud_brick_stairs.json",
+          "src/main/resources/assets/mud_backport/models/item/mud_brick_stairs.json",
+          "src/main/java/net/mcreator/mudbackport/block/MudBrickStairsBlock.java",
+          "src/main/resources/assets/mud_backport/models/block/mud_brick_stairs_outer.json"
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "MudBrickWall",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_brick_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/models/block/mud_brick_wall_side_tall.json",
+          "src/main/resources/assets/mud_backport/blockstates/mud_brick_wall.json",
+          "src/main/resources/assets/mud_backport/models/item/mud_brick_wall.json",
+          "src/main/resources/assets/mud_backport/models/block/mud_brick_wall.json",
+          "src/main/resources/assets/mud_backport/models/block/mud_brick_wall_post.json",
+          "src/main/resources/assets/mud_backport/models/block/mud_brick_wall_inventory.json",
+          "src/main/java/net/mcreator/mudbackport/block/MudBrickWallBlock.java"
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "MudBricksRecipe",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_bricks_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/mud_bricks_recipe.json"
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "MudBrickWallRecipe",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_brick_wall_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/mud_brick_wall_recipe.json"
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "MudBrickSlabRecipe",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_brick_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/mud_brick_slab_recipe.json"
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "MudBrickStairsRecipe",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_brick_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/mud_brick_stairs_recipe.json"
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "MudBrickStairsStonecutterRecipe",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_brick_stairs_stonecutter_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/mud_brick_stairs_stonecutter_recipe.json"
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "MudBrickSlabStonecutterRecipe",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_brick_slab_stonecutter_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/mud_brick_slab_stonecutter_recipe.json"
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "MudBrickWallStonecutterRecipe",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_brick_wall_stonecutter_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/mud_brick_wall_stonecutter_recipe.json"
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "Roots",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roots",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/models/block/roots.json",
+          "src/main/java/net/mcreator/mudbackport/block/RootsBlock.java",
+          "src/main/resources/assets/mud_backport/models/item/roots.json",
+          "src/main/resources/assets/mud_backport/blockstates/roots.json"
+        ]
+      },
+      "path": "~/Stuff"
+    },
+    {
+      "name": "RootsRecipe",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/roots_recipe.json"
+        ]
+      },
+      "path": "~/Stuff"
+    },
+    {
+      "name": "ManualMudCreation",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manual_mud_creation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mudbackport/procedures/ManualMudCreationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "AutomatedMudCreation",
+      "type": "itemextension",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "automated_mud_creation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mudbackport/item/extension/AutomatedMudCreationItemExtension.java"
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "MudConvertable",
+      "type": "tag",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_convertable",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/blocks/mud_convertable.json"
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "MudCreationDispenseSuccessfullyIf",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_creation_dispense_successfully_if",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mudbackport/procedures/MudCreationDispenseSuccessfullyIfProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "MudCreationOnDispenseAttemptWithResult",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_creation_on_dispense_attempt_with_result",
+      "metadata": {
+        "return_type": "itemstack",
+        "files": [
+          "src/main/java/net/mcreator/mudbackport/procedures/MudCreationOnDispenseAttemptWithResultProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "Test",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manual_mud",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mudbackport/procedures/TestProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "MudCreation",
+      "type": "itemextension",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "automated_mud_",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mudbackport/item/extension/MudCreationItemExtension.java"
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "MuddyRoots",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muddy_roots",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/blockstates/muddy_roots.json",
+          "src/main/resources/assets/mud_backport/models/block/muddy_roots.json",
+          "src/main/java/net/mcreator/mudbackport/block/MuddyRootsBlock.java",
+          "src/main/resources/assets/mud_backport/models/item/muddy_roots.json"
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "MuddyRootsRecipe",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muddy_roots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/muddy_roots_recipe.json"
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "RootsFuel",
+      "type": "itemextension",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roots_fuel",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Stuff"
+    },
+    {
+      "name": "ReinforcedGlassPanes",
+      "type": "block",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_glass_panes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mudbackport/block/ReinforcedGlassPanesBlock.java",
+          "src/main/resources/assets/mud_backport/blockstates/reinforced_glass_panes.json",
+          "src/main/resources/assets/mud_backport/models/item/reinforced_glass_panes.json",
+          "src/main/resources/assets/mud_backport/models/block/reinforced_glass_panes_side.json",
+          "src/main/resources/assets/mud_backport/models/block/reinforced_glass_panes_noside_alt.json",
+          "src/main/resources/assets/mud_backport/models/block/reinforced_glass_panes_post.json",
+          "src/main/resources/assets/mud_backport/models/block/reinforced_glass_panes_side_alt.json",
+          "src/main/resources/assets/mud_backport/models/block/reinforced_glass_panes_noside.json"
+        ]
+      },
+      "path": "~/Stuff"
+    },
+    {
+      "name": "ReinforcedGlassPaneLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_glass_pane_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/loot_tables/blocks/reinforced_glass_panes.json"
+        ]
+      },
+      "path": "~/Stuff"
+    },
+    {
+      "name": "ReinforcedGlassPaneRecipe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "reinforced_glass_pane_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/reinforced_glass_pane_recipe.json"
+        ]
+      },
+      "path": "~/Stuff"
+    },
+    {
+      "name": "InfoStand",
+      "type": "block",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "info_stand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mudbackport/block/InfoStandBlock.java",
+          "src/main/resources/assets/mud_backport/models/item/info_stand.json",
+          "src/main/resources/assets/mud_backport/models/block/info_stand.json",
+          "src/main/resources/assets/mud_backport/blockstates/info_stand.json"
+        ]
+      },
+      "path": "~/Stuff"
+    },
+    {
+      "name": "InfoStandRecipe",
+      "type": "recipe",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "info_stand_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/info_stand_recipe.json"
+        ]
+      },
+      "path": "~/Stuff"
+    },
+    {
+      "name": "Mudmodtab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mudmodtab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "GinkgoWood",
+      "type": "block",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ginkgo_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/models/item/ginkgo_wood.json",
+          "src/main/resources/assets/mud_backport/blockstates/ginkgo_wood.json",
+          "src/main/java/net/mcreator/mudbackport/block/GinkgoWoodBlock.java",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_wood.json"
+        ]
+      },
+      "path": "~/Ginkgo_Tree"
+    },
+    {
+      "name": "GinkgoLog",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ginkgo_log",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mudbackport/block/GinkgoLogBlock.java",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_log.json",
+          "src/main/resources/assets/mud_backport/blockstates/ginkgo_log.json",
+          "src/main/resources/assets/mud_backport/models/item/ginkgo_log.json"
+        ]
+      },
+      "path": "~/Ginkgo_Tree"
+    },
+    {
+      "name": "GinkgoPlanks",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ginkgo_planks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_planks.json",
+          "src/main/java/net/mcreator/mudbackport/block/GinkgoPlanksBlock.java",
+          "src/main/resources/assets/mud_backport/models/item/ginkgo_planks.json",
+          "src/main/resources/assets/mud_backport/blockstates/ginkgo_planks.json"
+        ]
+      },
+      "path": "~/Ginkgo_Tree"
+    },
+    {
+      "name": "GinkgoLeaves",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ginkgo_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/blockstates/ginkgo_leaves.json",
+          "src/main/java/net/mcreator/mudbackport/block/GinkgoLeavesBlock.java",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_leaves.json",
+          "src/main/resources/assets/mud_backport/models/item/ginkgo_leaves.json"
+        ]
+      },
+      "path": "~/Ginkgo_Tree"
+    },
+    {
+      "name": "GinkgoStairs",
+      "type": "block",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ginkgo_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_stairs_outer.json",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_stairs_inner.json",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_stairs.json",
+          "src/main/resources/assets/mud_backport/blockstates/ginkgo_stairs.json",
+          "src/main/java/net/mcreator/mudbackport/block/GinkgoStairsBlock.java",
+          "src/main/resources/assets/mud_backport/models/item/ginkgo_stairs.json"
+        ]
+      },
+      "path": "~/Ginkgo_Tree"
+    },
+    {
+      "name": "GinkgoSlab",
+      "type": "block",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ginkgo_slab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mudbackport/block/GinkgoSlabBlock.java",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_slab_top.json",
+          "src/main/resources/assets/mud_backport/blockstates/ginkgo_slab.json",
+          "src/main/resources/assets/mud_backport/models/item/ginkgo_slab.json",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_slab.json",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_slab_full.json"
+        ]
+      },
+      "path": "~/Ginkgo_Tree"
+    },
+    {
+      "name": "GinkgoFence",
+      "type": "block",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ginkgo_fence",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mudbackport/block/GinkgoFenceBlock.java",
+          "src/main/resources/assets/mud_backport/blockstates/ginkgo_fence.json",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_fence.json",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_fence_inventory.json",
+          "src/main/resources/assets/mud_backport/models/item/ginkgo_fence.json",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_fence_post.json"
+        ]
+      },
+      "path": "~/Ginkgo_Tree"
+    },
+    {
+      "name": "GinkgoFenceGate",
+      "type": "block",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ginkgo_fence_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_fence_gate_wall_open.json",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_fence_gate.json",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_fence_gate_wall.json",
+          "src/main/java/net/mcreator/mudbackport/block/GinkgoFenceGateBlock.java",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_fence_gate_open.json",
+          "src/main/resources/assets/mud_backport/models/item/ginkgo_fence_gate.json",
+          "src/main/resources/assets/mud_backport/blockstates/ginkgo_fence_gate.json"
+        ]
+      },
+      "path": "~/Ginkgo_Tree"
+    },
+    {
+      "name": "GinkgoPressurePlate",
+      "type": "block",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ginkgo_pressure_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/models/item/ginkgo_pressure_plate.json",
+          "src/main/java/net/mcreator/mudbackport/block/GinkgoPressurePlateBlock.java",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_pressure_plate_down.json",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_pressure_plate.json",
+          "src/main/resources/assets/mud_backport/blockstates/ginkgo_pressure_plate.json"
+        ]
+      },
+      "path": "~/Ginkgo_Tree"
+    },
+    {
+      "name": "GinkgoButton",
+      "type": "block",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ginkgo_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mudbackport/block/GinkgoButtonBlock.java",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_button.json",
+          "src/main/resources/assets/mud_backport/blockstates/ginkgo_button.json",
+          "src/main/resources/assets/mud_backport/models/item/ginkgo_button.json",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_button_inventory.json",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_button_pressed.json"
+        ]
+      },
+      "path": "~/Ginkgo_Tree"
+    },
+    {
+      "name": "GinkgoItemsTag",
+      "type": "tag",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ginkgo_items_tag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/items/ginkgo_log.json"
+        ]
+      },
+      "path": "~/Ginkgo_Tree"
+    },
+    {
+      "name": "GinkgoWoodRecipe",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ginkgo_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/ginkgo_wood_recipe.json"
+        ]
+      },
+      "path": "~/Ginkgo_Tree"
+    },
+    {
+      "name": "GinkgoPlanksRecipe",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ginkgo_planks_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/ginkgo_planks_recipe.json"
+        ]
+      },
+      "path": "~/Ginkgo_Tree"
+    },
+    {
+      "name": "GinkgoStairsRecipe",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ginkgo_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/ginkgo_stairs_recipe.json"
+        ]
+      },
+      "path": "~/Ginkgo_Tree"
+    },
+    {
+      "name": "GinkgoSlabRecipe",
+      "type": "recipe",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ginkgo_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/ginkgo_slab_recipe.json"
+        ]
+      },
+      "path": "~/Ginkgo_Tree"
+    },
+    {
+      "name": "GinkgoFenceRecipe",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ginkgo_fence_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/ginkgo_fence_recipe.json"
+        ]
+      },
+      "path": "~/Ginkgo_Tree"
+    },
+    {
+      "name": "GinkgoFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ginkgo_fence_gate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/ginkgo_fence_gate_recipe.json"
+        ]
+      },
+      "path": "~/Ginkgo_Tree"
+    },
+    {
+      "name": "GinkgoPressurePlateRecipe",
+      "type": "recipe",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ginkgo_pressure_plate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/ginkgo_pressure_plate_recipe.json"
+        ]
+      },
+      "path": "~/Ginkgo_Tree"
+    },
+    {
+      "name": "GinkgoButtonRecipe",
+      "type": "recipe",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ginkgo_button_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/ginkgo_button_recipe.json"
+        ]
+      },
+      "path": "~/Ginkgo_Tree"
+    },
+    {
+      "name": "GinkgoStickRecipe",
+      "type": "recipe",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ginkgo_stick_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/ginkgo_stick_recipe.json"
+        ]
+      },
+      "path": "~/Ginkgo_Tree"
+    },
+    {
+      "name": "AraucariaWood",
+      "type": "block",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucaria_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/blockstates/araucaria_wood.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_wood.json",
+          "src/main/resources/assets/mud_backport/models/item/araucaria_wood.json",
+          "src/main/java/net/mcreator/mudbackport/block/AraucariaWoodBlock.java"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "AraucariaLog",
+      "type": "block",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucaria_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/models/block/araucaria_log.json",
+          "src/main/java/net/mcreator/mudbackport/block/AraucariaLogBlock.java",
+          "src/main/resources/assets/mud_backport/blockstates/araucaria_log.json",
+          "src/main/resources/assets/mud_backport/models/item/araucaria_log.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "AraucariaPlanks",
+      "type": "block",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucaria_planks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mudbackport/block/AraucariaPlanksBlock.java",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_planks.json",
+          "src/main/resources/assets/mud_backport/models/item/araucaria_planks.json",
+          "src/main/resources/assets/mud_backport/blockstates/araucaria_planks.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "AraucariaLeaves",
+      "type": "block",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucaria_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/models/item/araucaria_leaves.json",
+          "src/main/resources/assets/mud_backport/blockstates/araucaria_leaves.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_leaves.json",
+          "src/main/java/net/mcreator/mudbackport/block/AraucariaLeavesBlock.java"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "AraucariaStairs",
+      "type": "block",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucaria_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/models/item/araucaria_stairs.json",
+          "src/main/resources/assets/mud_backport/blockstates/araucaria_stairs.json",
+          "src/main/java/net/mcreator/mudbackport/block/AraucariaStairsBlock.java",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_stairs_inner.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_stairs_outer.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_stairs.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "AraucariaSlab",
+      "type": "block",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucaria_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/models/block/araucaria_slab_top.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_slab.json",
+          "src/main/resources/assets/mud_backport/models/item/araucaria_slab.json",
+          "src/main/resources/assets/mud_backport/blockstates/araucaria_slab.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_slab_full.json",
+          "src/main/java/net/mcreator/mudbackport/block/AraucariaSlabBlock.java"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "AraucariaFence",
+      "type": "block",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucaria_fence",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mudbackport/block/AraucariaFenceBlock.java",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_fence.json",
+          "src/main/resources/assets/mud_backport/models/item/araucaria_fence.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_fence_post.json",
+          "src/main/resources/assets/mud_backport/blockstates/araucaria_fence.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_fence_inventory.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "AraucariaFenceGate",
+      "type": "block",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucaria_fence_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/models/block/araucaria_fence_gate_wall.json",
+          "src/main/java/net/mcreator/mudbackport/block/AraucariaFenceGateBlock.java",
+          "src/main/resources/assets/mud_backport/blockstates/araucaria_fence_gate.json",
+          "src/main/resources/assets/mud_backport/models/item/araucaria_fence_gate.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_fence_gate_wall_open.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_fence_gate.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_fence_gate_open.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "AraucariaPressurePlate",
+      "type": "block",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucaria_pressure_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/models/item/araucaria_pressure_plate.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_pressure_plate.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_pressure_plate_down.json",
+          "src/main/java/net/mcreator/mudbackport/block/AraucariaPressurePlateBlock.java",
+          "src/main/resources/assets/mud_backport/blockstates/araucaria_pressure_plate.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "AraucariaButton",
+      "type": "block",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucaria_button",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/models/block/araucaria_button_inventory.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_button.json",
+          "src/main/java/net/mcreator/mudbackport/block/AraucariaButtonBlock.java",
+          "src/main/resources/assets/mud_backport/models/item/araucaria_button.json",
+          "src/main/resources/assets/mud_backport/blockstates/araucaria_button.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_button_pressed.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "AraucariaItemsTag",
+      "type": "tag",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucaria_items_tag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/items/araucaria_log.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "AraucariaWoodRecipe",
+      "type": "recipe",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucaria_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/araucaria_wood_recipe.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "AraucariaPlanksRecipe",
+      "type": "recipe",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucaria_planks_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/araucaria_planks_recipe.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "AraucariaStairsRecipe",
+      "type": "recipe",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucaria_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/araucaria_stairs_recipe.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "AraucariaSlabRecipe",
+      "type": "recipe",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucaria_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/araucaria_slab_recipe.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "AraucariaFenceRecipe",
+      "type": "recipe",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucaria_fence_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/araucaria_fence_recipe.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "AraucariaFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucaria_fence_gate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/araucaria_fence_gate_recipe.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "AraucariaPressurePlateRecipe",
+      "type": "recipe",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucaria_pressure_plate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/araucaria_pressure_plate_recipe.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "AraucariaButtonRecipe",
+      "type": "recipe",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucaria_button_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/araucaria_button_recipe.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "AraucariaStickRecipe",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucaria_stick_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/araucaria_stick_recipe.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "Araucarianeedles",
+      "type": "plant",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucarianeedles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mudbackport/block/AraucarianeedlesBlock.java",
+          "src/main/resources/assets/mud_backport/models/block/araucarianeedles.json",
+          "src/main/resources/assets/mud_backport/models/item/araucarianeedles.json",
+          "src/main/resources/assets/mud_backport/blockstates/araucarianeedles.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "AraucariaDoor",
+      "type": "block",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucaria_door",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mudbackport/block/AraucariaDoorBlock.java",
+          "src/main/resources/assets/mud_backport/blockstates/araucaria_door.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_door_top_hinge.json",
+          "src/main/resources/assets/mud_backport/models/item/araucaria_door.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_door_top.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_door_bottom.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_door_bottom_hinge.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "AraucariaTrapdoor",
+      "type": "block",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucaria_trapdoor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/models/item/araucaria_trapdoor.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_trapdoor_open.json",
+          "src/main/resources/assets/mud_backport/blockstates/araucaria_trapdoor.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_trapdoor_top.json",
+          "src/main/java/net/mcreator/mudbackport/block/AraucariaTrapdoorBlock.java",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_trapdoor.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "AraucariaDoorRecipe",
+      "type": "recipe",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucaria_door_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/araucaria_door_recipe.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "AraucariaTrapdoorRecipe",
+      "type": "recipe",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucaria_trapdoor_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/araucaria_trapdoor_recipe.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "mud_bricks_break",
+      "files": [
+        "mud_bricks_break1",
+        "mud_bricks_break2",
+        "mud_bricks_break3",
+        "mud_bricks_break4",
+        "mud_bricks_break5",
+        "mud_bricks_break6"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "packed_mud_step",
+      "files": [
+        "packed_mud_step1",
+        "packed_mud_step2",
+        "packed_mud_step3",
+        "packed_mud_step4",
+        "packed_mud_step5",
+        "packed_mud_step6"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "packed_mud_break",
+      "files": [
+        "packed_mud_break1",
+        "packed_mud_break2",
+        "packed_mud_break3",
+        "packed_mud_break4",
+        "packed_mud_break5",
+        "packed_mud_break6"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "bottle_splashing",
+      "files": [
+        "water_splash1",
+        "water_splash2"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "mud_bricks_step",
+      "files": [
+        "mud_bricks_step1",
+        "mud_bricks_step2",
+        "mud_bricks_step3",
+        "mud_bricks_step4",
+        "mud_bricks_step5",
+        "mud_bricks_step6"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "mud_step",
+      "files": [
+        "mud_step1",
+        "mud_step2",
+        "mud_step3",
+        "mud_step4",
+        "mud_step5",
+        "mud_step6"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "mud_break",
+      "files": [
+        "mud_break1",
+        "mud_break2",
+        "mud_break3",
+        "mud_break4",
+        "mud_break5",
+        "mud_break6"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "roots_break",
+      "files": [
+        "mangrove_roots_break1",
+        "mangrove_roots_break2",
+        "mangrove_roots_break3",
+        "mangrove_roots_break4",
+        "mangrove_roots_break5",
+        "mangrove_roots_break6"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "roots_step",
+      "files": [
+        "mangrove_roots_step1",
+        "mangrove_roots_step2",
+        "mangrove_roots_step3",
+        "mangrove_roots_step4",
+        "mangrove_roots_step5",
+        "mangrove_roots_step6"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "muddy_roots_break",
+      "files": [
+        "muddy_mangrove_roots_break1",
+        "muddy_mangrove_roots_break2",
+        "muddy_mangrove_roots_break3",
+        "muddy_mangrove_roots_break4",
+        "muddy_mangrove_roots_break5",
+        "muddy_mangrove_roots_break6"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "muddy_roots_step",
+      "files": [
+        "muddy_mangrove_roots_step1",
+        "muddy_mangrove_roots_step2",
+        "muddy_mangrove_roots_step3",
+        "muddy_mangrove_roots_step4",
+        "muddy_mangrove_roots_step5",
+        "muddy_mangrove_roots_step6"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "block.mud_backport.araucarianeedles": "Araucaria needles",
+      "block.mud_backport.araucaria_planks": "Araucaria Planks",
+      "block.mud_backport.araucaria_leaves": "Araucaria Leaves",
+      "block.mud_backport.reinforced_glass_panes": "Reinforced Glass Panes",
+      "block.mud_backport.araucaria_fence_gate": "Araucaria Fence Gate",
+      "block.mud_backport.info_stand": "Info Stand",
+      "block.mud_backport.araucaria_door": "Araucaria Door",
+      "block.mud_backport.araucaria_stairs": "Araucaria Stairs",
+      "subtitles.roots_step": "",
+      "block.mud_backport.ginkgo_leaves": "Ginkgo Leaves",
+      "block.mud_backport.ginkgo_slab": "Ginkgo Slab",
+      "block.mud_backport.mud_brick_wall": "Mud Bricks",
+      "block.mud_backport.ginkgo_planks": "Ginkgo Planks",
+      "block.mud_backport.araucaria_trapdoor": "Araucaria Trapdoor",
+      "subtitles.packed_mud_break": "",
+      "subtitles.packed_mud_place/break": "",
+      "subtitles.mud_bricks_step": "",
+      "subtitles.packed_mud_step": "",
+      "subtitles.mud_break": "",
+      "block.mud_backport.ginkgo_button": "Ginkgo Button",
+      "subtitles.bottle_splashing": "",
+      "block.mud_backport.ginkgo_wood": "Ginkgo Wood",
+      "block.mud_backport.ginkgo_fence_gate": "Ginkgo Fence Gate",
+      "block.mud_backport.ginkgo_stairs": "Ginkgo Stairs",
+      "block.mud_backport.ginkgo_pressure_plate": "Ginkgo Pressure Plate",
+      "block.mud_backport.araucaria_button": "Araucaria Button",
+      "block.mud_backport.mud_bricks": "Mud Bricks",
+      "subtitles.mud_step": "",
+      "block.mud_backport.ginkgo_log": "Ginkgo Log",
+      "itemGroup.tabmudmodtab": "Mud mod and stuff",
+      "subtitles.muddy_roots_step": "",
+      "block.mud_backport.araucaria_pressure_plate": "Araucaria Pressure Plate",
+      "subtitles.roots_break": "",
+      "block.mud_backport.muddy_roots": "Muddy Roots",
+      "subtitles.mud_step/fall/hit": "",
+      "block.mud_backport.mud_brick_slab": "Mud Bricks",
+      "block.mud_backport.araucaria_wood": "Araucaria Wood",
+      "block.mud_backport.ginkgo_fence": "Ginkgo Fence",
+      "block.mud_backport.roots": "Roots",
+      "subtitles.muddy_roots_break": "",
+      "block.mud_backport.mud": "Mud",
+      "block.mud_backport.araucaria_log": "Araucaria Log",
+      "block.mud_backport.araucaria_fence": "Araucaria Fence",
+      "block.mud_backport.araucaria_slab": "Araucaria Slab",
+      "block.mud_backport.packed_mud": "Packed Mud",
+      "subtitles.mud_place/break": "",
+      "subtitles.mud_bricks_break": "",
+      "block.mud_backport.mud_brick_stairs": "Mud Bricks"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Ginkgo_Tree",
+        "children": []
+      },
+      {
+        "name": "Araucaria_Tree",
+        "children": []
+      },
+      {
+        "name": "Mud",
+        "children": []
+      },
+      {
+        "name": "Stuff",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "mud_backport",
+    "modName": "Mud Backport",
+    "version": "1.1.5",
+    "description": "A quick backport of mud and its relatives to 1.18.2",
+    "author": "Snubig1",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.mudbackport",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300110610
+}

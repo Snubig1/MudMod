@@ -1,0 +1,305 @@
+{
+  "mud_bricks_break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "mud_backport:mud_bricks_break1",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mud_bricks_break2",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mud_bricks_break3",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mud_bricks_break4",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mud_bricks_break5",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mud_bricks_break6",
+        "stream": false
+      }
+    ]
+  },
+  "packed_mud_step": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "mud_backport:packed_mud_step1",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:packed_mud_step2",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:packed_mud_step3",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:packed_mud_step4",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:packed_mud_step5",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:packed_mud_step6",
+        "stream": false
+      }
+    ]
+  },
+  "packed_mud_break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "mud_backport:packed_mud_break1",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:packed_mud_break2",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:packed_mud_break3",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:packed_mud_break4",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:packed_mud_break5",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:packed_mud_break6",
+        "stream": false
+      }
+    ]
+  },
+  "bottle_splashing": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "mud_backport:water_splash1",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:water_splash2",
+        "stream": false
+      }
+    ]
+  },
+  "mud_bricks_step": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "mud_backport:mud_bricks_step1",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mud_bricks_step2",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mud_bricks_step3",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mud_bricks_step4",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mud_bricks_step5",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mud_bricks_step6",
+        "stream": false
+      }
+    ]
+  },
+  "mud_step": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "mud_backport:mud_step1",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mud_step2",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mud_step3",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mud_step4",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mud_step5",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mud_step6",
+        "stream": false
+      }
+    ]
+  },
+  "mud_break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "mud_backport:mud_break1",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mud_break2",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mud_break3",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mud_break4",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mud_break5",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mud_break6",
+        "stream": false
+      }
+    ]
+  },
+  "roots_break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "mud_backport:mangrove_roots_break1",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mangrove_roots_break2",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mangrove_roots_break3",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mangrove_roots_break4",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mangrove_roots_break5",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mangrove_roots_break6",
+        "stream": false
+      }
+    ]
+  },
+  "roots_step": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "mud_backport:mangrove_roots_step1",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mangrove_roots_step2",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mangrove_roots_step3",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mangrove_roots_step4",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mangrove_roots_step5",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:mangrove_roots_step6",
+        "stream": false
+      }
+    ]
+  },
+  "muddy_roots_break": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "mud_backport:muddy_mangrove_roots_break1",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:muddy_mangrove_roots_break2",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:muddy_mangrove_roots_break3",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:muddy_mangrove_roots_break4",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:muddy_mangrove_roots_break5",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:muddy_mangrove_roots_break6",
+        "stream": false
+      }
+    ]
+  },
+  "muddy_roots_step": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "mud_backport:muddy_mangrove_roots_step1",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:muddy_mangrove_roots_step2",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:muddy_mangrove_roots_step3",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:muddy_mangrove_roots_step4",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:muddy_mangrove_roots_step5",
+        "stream": false
+      },
+      {
+        "name": "mud_backport:muddy_mangrove_roots_step6",
+        "stream": false
+      }
+    ]
+  }
+}

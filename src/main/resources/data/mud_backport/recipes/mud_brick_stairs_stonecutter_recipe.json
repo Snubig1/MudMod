@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "mud_backport:mud_bricks"
+  },
+  "result": "mud_backport:mud_brick_stairs"
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "mud_backport:packed_mud",
+    "mud_backport:mud_bricks",
+    "mud_backport:mud_brick_slab",
+    "mud_backport:mud_brick_stairs",
+    "mud_backport:mud_brick_wall",
+    "mud_backport:info_stand"
+  ]
+}

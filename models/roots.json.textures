@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "roots_reverse",
+        "1": "roots_side",
+        "2": "roots_top",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mud_backport:block/ginkgo_slab"
+    },
+    "type=top": {
+      "model": "mud_backport:block/ginkgo_slab_top"
+    },
+    "type=double": {
+      "model": "mud_backport:block/ginkgo_slab_full"
+    }
+  }
+}

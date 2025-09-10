@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "mud_backport:packed_mud"
+    },
+    "1": {
+      "item": "mud_backport:packed_mud"
+    },
+    "2": {
+      "item": "mud_backport:packed_mud"
+    },
+    "3": {
+      "item": "mud_backport:packed_mud"
+    }
+  },
+  "result": {
+    "item": "mud_backport:mud_bricks",
+    "count": 4
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    "45"
+  ],
+  "key": {
+    "0": {
+      "item": "mud_backport:araucaria_planks"
+    },
+    "1": {
+      "item": "mud_backport:araucaria_planks"
+    },
+    "2": {
+      "item": "mud_backport:araucaria_planks"
+    },
+    "3": {
+      "item": "mud_backport:araucaria_planks"
+    },
+    "4": {
+      "item": "mud_backport:araucaria_planks"
+    },
+    "5": {
+      "item": "mud_backport:araucaria_planks"
+    }
+  },
+  "result": {
+    "item": "mud_backport:araucaria_door",
+    "count": 3
+  }
+}

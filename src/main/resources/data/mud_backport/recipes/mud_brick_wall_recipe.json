@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "mud_backport:mud_bricks"
+    },
+    "1": {
+      "item": "mud_backport:mud_bricks"
+    },
+    "2": {
+      "item": "mud_backport:mud_bricks"
+    },
+    "3": {
+      "item": "mud_backport:mud_bricks"
+    },
+    "4": {
+      "item": "mud_backport:mud_bricks"
+    },
+    "5": {
+      "item": "mud_backport:mud_bricks"
+    }
+  },
+  "result": {
+    "item": "mud_backport:mud_brick_wall",
+    "count": 6
+  }
+}

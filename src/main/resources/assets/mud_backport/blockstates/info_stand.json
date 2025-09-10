@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "mud_backport:block/info_stand"
+    },
+    "facing=east": {
+      "model": "mud_backport:block/info_stand",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "mud_backport:block/info_stand",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mud_backport:block/info_stand",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "wall": "mud_backport:blocks/image",
+    "particle": "mud_backport:blocks/image"
+  }
+}

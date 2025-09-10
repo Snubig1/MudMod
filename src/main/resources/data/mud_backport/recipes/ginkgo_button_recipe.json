@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mud_backport:ginkgo_planks"
+    }
+  ],
+  "result": {
+    "item": "mud_backport:ginkgo_button",
+    "count": 1
+  }
+}

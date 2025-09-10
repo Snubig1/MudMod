@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "mud_backport:blocks/image",
+    "top": "mud_backport:blocks/image",
+    "side": "mud_backport:blocks/image"
+  }
+}

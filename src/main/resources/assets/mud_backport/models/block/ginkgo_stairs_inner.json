@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "mud_backport:blocks/ginkgo_planks",
+    "top": "mud_backport:blocks/ginkgo_planks",
+    "side": "mud_backport:blocks/ginkgo_planks"
+  }
+}

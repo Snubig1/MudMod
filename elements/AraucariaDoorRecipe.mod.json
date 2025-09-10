@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 3,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AraucariaPlanks"
+      },
+      {
+        "value": "CUSTOM:AraucariaPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AraucariaPlanks"
+      },
+      {
+        "value": "CUSTOM:AraucariaPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AraucariaPlanks"
+      },
+      {
+        "value": "CUSTOM:AraucariaPlanks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AraucariaDoor"
+    },
+    "name": "araucaria_door_recipe",
+    "namespace": "mod"
+  }
+}
