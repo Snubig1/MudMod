@@ -36,7 +36,7 @@
     ],
     "name": "Ginkgo Slab",
     "specialInfo": [],
-    "hardness": 2.0,
+    "hardness": 5.0,
     "resistance": 3.0,
     "hasGravity": false,
     "isWaterloggable": false,
