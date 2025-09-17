@@ -20,6 +20,7 @@
     "mud_backport:araucaria_pressure_plate",
     "mud_backport:araucaria_button",
     "mud_backport:araucaria_door",
-    "mud_backport:araucaria_trapdoor"
+    "mud_backport:araucaria_trapdoor",
+    "mud_backport:ginkgo_slab"
   ]
 }
