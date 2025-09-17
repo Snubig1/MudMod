@@ -10,7 +10,7 @@ credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
 authors="Snubig1"
 description='''
-A quick backport of mud and its relatives to 1.18.2
+A not so quick backport of mud and its distant relatives to 1.18.2
 '''
 
 [[dependencies.mud_backport]]
