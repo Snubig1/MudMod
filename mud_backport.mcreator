@@ -1240,10 +1240,10 @@
       "registry_name": "araucarianeedles",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mudbackport/block/AraucarianeedlesBlock.java",
           "src/main/resources/assets/mud_backport/models/block/araucarianeedles.json",
           "src/main/resources/assets/mud_backport/models/item/araucarianeedles.json",
-          "src/main/resources/assets/mud_backport/blockstates/araucarianeedles.json"
+          "src/main/resources/assets/mud_backport/blockstates/araucarianeedles.json",
+          "src/main/java/net/mcreator/mudbackport/block/AraucarianeedlesBlock.java"
         ]
       },
       "path": "~/Araucaria_Tree"

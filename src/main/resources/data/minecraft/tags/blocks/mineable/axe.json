@@ -5,8 +5,22 @@
     "mud_backport:ginkgo_wood",
     "mud_backport:ginkgo_log",
     "mud_backport:ginkgo_planks",
+    "mud_backport:ginkgo_stairs",
+    "mud_backport:ginkgo_slab",
+    "mud_backport:ginkgo_fence",
+    "mud_backport:ginkgo_fence_gate",
+    "mud_backport:ginkgo_pressure_plate",
+    "mud_backport:ginkgo_button",
     "mud_backport:araucaria_wood",
     "mud_backport:araucaria_log",
-    "mud_backport:araucaria_planks"
+    "mud_backport:araucaria_planks",
+    "mud_backport:araucaria_stairs",
+    "mud_backport:araucaria_slab",
+    "mud_backport:araucaria_fence",
+    "mud_backport:araucaria_fence_gate",
+    "mud_backport:araucaria_pressure_plate",
+    "mud_backport:araucaria_button",
+    "mud_backport:araucaria_door",
+    "mud_backport:araucaria_trapdoor"
   ]
 }
