@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "mud_backport:ginkgo_leaves",
+    "mud_backport:araucaria_leaves"
+  ]
+}
