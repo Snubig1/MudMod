@@ -38,7 +38,7 @@
     "specialInfo": [],
     "hardness": 2.0,
     "resistance": 3.0,
-    "hasGravity": true,
+    "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:Mudmodtab"
