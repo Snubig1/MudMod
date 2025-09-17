@@ -6,7 +6,6 @@
     "mud_backport:ginkgo_log",
     "mud_backport:ginkgo_planks",
     "mud_backport:ginkgo_stairs",
-    "mud_backport:ginkgo_slab",
     "mud_backport:ginkgo_fence",
     "mud_backport:ginkgo_fence_gate",
     "mud_backport:ginkgo_pressure_plate",

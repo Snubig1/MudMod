@@ -6,6 +6,7 @@
     "mud_backport:mud_brick_slab",
     "mud_backport:mud_brick_stairs",
     "mud_backport:mud_brick_wall",
-    "mud_backport:info_stand"
+    "mud_backport:info_stand",
+    "mud_backport:ginkgo_slab"
   ]
 }
