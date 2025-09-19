@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "mud_backport:araucaria_wood",
+    "mud_backport:stripped_araucaria_log",
+    "mud_backport:stripped_araucaria_wood",
     "mud_backport:araucaria_log"
   ]
 }

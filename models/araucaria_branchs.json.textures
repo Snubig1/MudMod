@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "araucaria_branch_reverse",
+        "1": "araucaria_branch_top",
+        "2": "araucaria_branch_side",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

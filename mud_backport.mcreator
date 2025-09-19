@@ -1314,6 +1314,71 @@
         ]
       },
       "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "AraucariaBranchs",
+      "type": "block",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "araucaria_branchs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mudbackport/block/AraucariaBranchsBlock.java",
+          "src/main/resources/assets/mud_backport/models/item/araucaria_branchs.json",
+          "src/main/resources/assets/mud_backport/blockstates/araucaria_branchs.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_branchs.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "StrippedAraucariaLog",
+      "type": "block",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_araucaria_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/blockstates/stripped_araucaria_log.json",
+          "src/main/java/net/mcreator/mudbackport/block/StrippedAraucariaLogBlock.java",
+          "src/main/resources/assets/mud_backport/models/item/stripped_araucaria_log.json",
+          "src/main/resources/assets/mud_backport/models/block/stripped_araucaria_log.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "StrippedAraucariaWood",
+      "type": "block",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_araucaria_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/blockstates/stripped_araucaria_wood.json",
+          "src/main/resources/assets/mud_backport/models/block/stripped_araucaria_wood.json",
+          "src/main/java/net/mcreator/mudbackport/block/StrippedAraucariaWoodBlock.java",
+          "src/main/resources/assets/mud_backport/models/item/stripped_araucaria_wood.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "StrippedAraucariaWoodRecipe",
+      "type": "recipe",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_araucaria_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mud_backport/recipes/stripped_araucaria_wood_recipe.json"
+        ]
+      },
+      "path": "~/Araucaria_Tree"
     }
   ],
   "variable_elements": [],
@@ -1474,6 +1539,7 @@
       "block.mud_backport.mud_brick_wall": "Mud Bricks",
       "block.mud_backport.ginkgo_planks": "Ginkgo Planks",
       "block.mud_backport.araucaria_trapdoor": "Araucaria Trapdoor",
+      "block.mud_backport.araucaria_branchs": "Araucaria Branchs",
       "subtitles.packed_mud_break": "",
       "subtitles.packed_mud_place/break": "",
       "subtitles.mud_bricks_step": "",
@@ -1484,6 +1550,7 @@
       "block.mud_backport.ginkgo_wood": "Ginkgo Wood",
       "block.mud_backport.ginkgo_fence_gate": "Ginkgo Fence Gate",
       "block.mud_backport.ginkgo_stairs": "Ginkgo Stairs",
+      "block.mud_backport.stripped_araucaria_wood": "Stripped Araucaria Wood",
       "block.mud_backport.ginkgo_pressure_plate": "Ginkgo Pressure Plate",
       "block.mud_backport.araucaria_button": "Araucaria Button",
       "block.mud_backport.mud_bricks": "Mud Bricks",
@@ -1500,6 +1567,7 @@
       "block.mud_backport.ginkgo_fence": "Ginkgo Fence",
       "block.mud_backport.roots": "Roots",
       "subtitles.muddy_roots_break": "",
+      "block.mud_backport.stripped_araucaria_log": "Stripped Araucaria Log",
       "block.mud_backport.mud": "Mud",
       "block.mud_backport.araucaria_log": "Araucaria Log",
       "block.mud_backport.araucaria_fence": "Araucaria Fence",

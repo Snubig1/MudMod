@@ -6,6 +6,7 @@
     "mud_backport:ginkgo_log",
     "mud_backport:ginkgo_planks",
     "mud_backport:ginkgo_stairs",
+    "mud_backport:ginkgo_slab",
     "mud_backport:ginkgo_fence",
     "mud_backport:ginkgo_fence_gate",
     "mud_backport:ginkgo_pressure_plate",
@@ -21,6 +22,8 @@
     "mud_backport:araucaria_button",
     "mud_backport:araucaria_door",
     "mud_backport:araucaria_trapdoor",
-    "mud_backport:ginkgo_slab"
+    "mud_backport:araucaria_branchs",
+    "mud_backport:stripped_araucaria_log",
+    "mud_backport:stripped_araucaria_wood"
   ]
 }

@@ -51,6 +51,9 @@ public class MudBackportModItems {
 	public static final RegistryObject<Item> ARAUCARIANEEDLES = block(MudBackportModBlocks.ARAUCARIANEEDLES, MudBackportModTabs.TAB_MUDMODTAB);
 	public static final RegistryObject<Item> ARAUCARIA_DOOR = doubleBlock(MudBackportModBlocks.ARAUCARIA_DOOR, MudBackportModTabs.TAB_MUDMODTAB);
 	public static final RegistryObject<Item> ARAUCARIA_TRAPDOOR = block(MudBackportModBlocks.ARAUCARIA_TRAPDOOR, MudBackportModTabs.TAB_MUDMODTAB);
+	public static final RegistryObject<Item> ARAUCARIA_BRANCHS = block(MudBackportModBlocks.ARAUCARIA_BRANCHS, MudBackportModTabs.TAB_MUDMODTAB);
+	public static final RegistryObject<Item> STRIPPED_ARAUCARIA_LOG = block(MudBackportModBlocks.STRIPPED_ARAUCARIA_LOG, MudBackportModTabs.TAB_MUDMODTAB);
+	public static final RegistryObject<Item> STRIPPED_ARAUCARIA_WOOD = block(MudBackportModBlocks.STRIPPED_ARAUCARIA_WOOD, MudBackportModTabs.TAB_MUDMODTAB);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

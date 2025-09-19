@@ -14,6 +14,8 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.mudbackport.block.StrippedAraucariaWoodBlock;
+import net.mcreator.mudbackport.block.StrippedAraucariaLogBlock;
 import net.mcreator.mudbackport.block.RootsBlock;
 import net.mcreator.mudbackport.block.ReinforcedGlassPanesBlock;
 import net.mcreator.mudbackport.block.PackedMudBlock;
@@ -47,6 +49,7 @@ import net.mcreator.mudbackport.block.AraucariaFenceGateBlock;
 import net.mcreator.mudbackport.block.AraucariaFenceBlock;
 import net.mcreator.mudbackport.block.AraucariaDoorBlock;
 import net.mcreator.mudbackport.block.AraucariaButtonBlock;
+import net.mcreator.mudbackport.block.AraucariaBranchsBlock;
 import net.mcreator.mudbackport.MudBackportMod;
 
 public class MudBackportModBlocks {
@@ -84,6 +87,9 @@ public class MudBackportModBlocks {
 	public static final RegistryObject<Block> ARAUCARIANEEDLES = REGISTRY.register("araucarianeedles", () -> new AraucarianeedlesBlock());
 	public static final RegistryObject<Block> ARAUCARIA_DOOR = REGISTRY.register("araucaria_door", () -> new AraucariaDoorBlock());
 	public static final RegistryObject<Block> ARAUCARIA_TRAPDOOR = REGISTRY.register("araucaria_trapdoor", () -> new AraucariaTrapdoorBlock());
+	public static final RegistryObject<Block> ARAUCARIA_BRANCHS = REGISTRY.register("araucaria_branchs", () -> new AraucariaBranchsBlock());
+	public static final RegistryObject<Block> STRIPPED_ARAUCARIA_LOG = REGISTRY.register("stripped_araucaria_log", () -> new StrippedAraucariaLogBlock());
+	public static final RegistryObject<Block> STRIPPED_ARAUCARIA_WOOD = REGISTRY.register("stripped_araucaria_wood", () -> new StrippedAraucariaWoodBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -96,6 +102,7 @@ public class MudBackportModBlocks {
 			AraucarianeedlesBlock.registerRenderLayer();
 			AraucariaDoorBlock.registerRenderLayer();
 			AraucariaTrapdoorBlock.registerRenderLayer();
+			AraucariaBranchsBlock.registerRenderLayer();
 		}
 	}
 }
