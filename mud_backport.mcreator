@@ -9,9 +9,9 @@
       "registry_name": "mud",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mud_backport/models/item/mud.json",
           "src/main/resources/assets/mud_backport/models/block/mud.json",
           "src/main/java/net/mcreator/mudbackport/block/MudBlock.java",
+          "src/main/resources/assets/mud_backport/models/item/mud.json",
           "src/main/resources/assets/mud_backport/blockstates/mud.json"
         ]
       },
@@ -59,9 +59,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/mud_backport/models/block/packed_mud.json",
-          "src/main/resources/assets/mud_backport/blockstates/packed_mud.json",
           "src/main/java/net/mcreator/mudbackport/block/PackedMudBlock.java",
-          "src/main/resources/assets/mud_backport/models/item/packed_mud.json"
+          "src/main/resources/assets/mud_backport/models/item/packed_mud.json",
+          "src/main/resources/assets/mud_backport/blockstates/packed_mud.json"
         ]
       },
       "path": "~/Mud"
@@ -89,10 +89,10 @@
       "registry_name": "mud_bricks",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mud_backport/models/item/mud_bricks.json",
-          "src/main/java/net/mcreator/mudbackport/block/MudBricksBlock.java",
           "src/main/resources/assets/mud_backport/blockstates/mud_bricks.json",
-          "src/main/resources/assets/mud_backport/models/block/mud_bricks.json"
+          "src/main/resources/assets/mud_backport/models/block/mud_bricks.json",
+          "src/main/resources/assets/mud_backport/models/item/mud_bricks.json",
+          "src/main/java/net/mcreator/mudbackport/block/MudBricksBlock.java"
         ]
       },
       "path": "~/Mud"
@@ -107,11 +107,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/mud_backport/blockstates/mud_brick_slab.json",
-          "src/main/resources/assets/mud_backport/models/block/mud_brick_slab_full.json",
           "src/main/java/net/mcreator/mudbackport/block/MudBrickSlabBlock.java",
           "src/main/resources/assets/mud_backport/models/block/mud_brick_slab.json",
-          "src/main/resources/assets/mud_backport/models/block/mud_brick_slab_top.json",
-          "src/main/resources/assets/mud_backport/models/item/mud_brick_slab.json"
+          "src/main/resources/assets/mud_backport/models/item/mud_brick_slab.json",
+          "src/main/resources/assets/mud_backport/models/block/mud_brick_slab_full.json",
+          "src/main/resources/assets/mud_backport/models/block/mud_brick_slab_top.json"
         ]
       },
       "path": "~/Mud"
@@ -125,11 +125,11 @@
       "registry_name": "mud_brick_stairs",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mud_backport/models/block/mud_brick_stairs_inner.json",
-          "src/main/resources/assets/mud_backport/models/block/mud_brick_stairs.json",
+          "src/main/java/net/mcreator/mudbackport/block/MudBrickStairsBlock.java",
           "src/main/resources/assets/mud_backport/blockstates/mud_brick_stairs.json",
           "src/main/resources/assets/mud_backport/models/item/mud_brick_stairs.json",
-          "src/main/java/net/mcreator/mudbackport/block/MudBrickStairsBlock.java",
+          "src/main/resources/assets/mud_backport/models/block/mud_brick_stairs_inner.json",
+          "src/main/resources/assets/mud_backport/models/block/mud_brick_stairs.json",
           "src/main/resources/assets/mud_backport/models/block/mud_brick_stairs_outer.json"
         ]
       },
@@ -144,13 +144,13 @@
       "registry_name": "mud_brick_wall",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/mudbackport/block/MudBrickWallBlock.java",
           "src/main/resources/assets/mud_backport/models/block/mud_brick_wall_side_tall.json",
-          "src/main/resources/assets/mud_backport/blockstates/mud_brick_wall.json",
-          "src/main/resources/assets/mud_backport/models/item/mud_brick_wall.json",
-          "src/main/resources/assets/mud_backport/models/block/mud_brick_wall.json",
-          "src/main/resources/assets/mud_backport/models/block/mud_brick_wall_post.json",
           "src/main/resources/assets/mud_backport/models/block/mud_brick_wall_inventory.json",
-          "src/main/java/net/mcreator/mudbackport/block/MudBrickWallBlock.java"
+          "src/main/resources/assets/mud_backport/models/block/mud_brick_wall.json",
+          "src/main/resources/assets/mud_backport/models/item/mud_brick_wall.json",
+          "src/main/resources/assets/mud_backport/blockstates/mud_brick_wall.json",
+          "src/main/resources/assets/mud_backport/models/block/mud_brick_wall_post.json"
         ]
       },
       "path": "~/Mud"
@@ -262,10 +262,10 @@
       "registry_name": "roots",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mud_backport/models/block/roots.json",
-          "src/main/java/net/mcreator/mudbackport/block/RootsBlock.java",
           "src/main/resources/assets/mud_backport/models/item/roots.json",
-          "src/main/resources/assets/mud_backport/blockstates/roots.json"
+          "src/main/resources/assets/mud_backport/models/block/roots.json",
+          "src/main/resources/assets/mud_backport/blockstates/roots.json",
+          "src/main/java/net/mcreator/mudbackport/block/RootsBlock.java"
         ]
       },
       "path": "~/Stuff"
@@ -464,8 +464,8 @@
       "registry_name": "muddy_roots",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mud_backport/blockstates/muddy_roots.json",
           "src/main/resources/assets/mud_backport/models/block/muddy_roots.json",
+          "src/main/resources/assets/mud_backport/blockstates/muddy_roots.json",
           "src/main/java/net/mcreator/mudbackport/block/MuddyRootsBlock.java",
           "src/main/resources/assets/mud_backport/models/item/muddy_roots.json"
         ]
@@ -508,13 +508,13 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mudbackport/block/ReinforcedGlassPanesBlock.java",
+          "src/main/resources/assets/mud_backport/models/block/reinforced_glass_panes_post.json",
           "src/main/resources/assets/mud_backport/blockstates/reinforced_glass_panes.json",
           "src/main/resources/assets/mud_backport/models/item/reinforced_glass_panes.json",
-          "src/main/resources/assets/mud_backport/models/block/reinforced_glass_panes_side.json",
           "src/main/resources/assets/mud_backport/models/block/reinforced_glass_panes_noside_alt.json",
-          "src/main/resources/assets/mud_backport/models/block/reinforced_glass_panes_post.json",
-          "src/main/resources/assets/mud_backport/models/block/reinforced_glass_panes_side_alt.json",
-          "src/main/resources/assets/mud_backport/models/block/reinforced_glass_panes_noside.json"
+          "src/main/resources/assets/mud_backport/models/block/reinforced_glass_panes_side.json",
+          "src/main/resources/assets/mud_backport/models/block/reinforced_glass_panes_noside.json",
+          "src/main/resources/assets/mud_backport/models/block/reinforced_glass_panes_side_alt.json"
         ]
       },
       "path": "~/Stuff"
@@ -555,10 +555,10 @@
       "registry_name": "info_stand",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mudbackport/block/InfoStandBlock.java",
-          "src/main/resources/assets/mud_backport/models/item/info_stand.json",
           "src/main/resources/assets/mud_backport/models/block/info_stand.json",
-          "src/main/resources/assets/mud_backport/blockstates/info_stand.json"
+          "src/main/resources/assets/mud_backport/models/item/info_stand.json",
+          "src/main/resources/assets/mud_backport/blockstates/info_stand.json",
+          "src/main/java/net/mcreator/mudbackport/block/InfoStandBlock.java"
         ]
       },
       "path": "~/Stuff"
@@ -596,10 +596,10 @@
       "registry_name": "ginkgo_wood",
       "metadata": {
         "files": [
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_wood.json",
           "src/main/resources/assets/mud_backport/models/item/ginkgo_wood.json",
-          "src/main/resources/assets/mud_backport/blockstates/ginkgo_wood.json",
           "src/main/java/net/mcreator/mudbackport/block/GinkgoWoodBlock.java",
-          "src/main/resources/assets/mud_backport/models/block/ginkgo_wood.json"
+          "src/main/resources/assets/mud_backport/blockstates/ginkgo_wood.json"
         ]
       },
       "path": "~/Ginkgo_Tree"
@@ -613,10 +613,10 @@
       "registry_name": "ginkgo_log",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mudbackport/block/GinkgoLogBlock.java",
           "src/main/resources/assets/mud_backport/models/block/ginkgo_log.json",
-          "src/main/resources/assets/mud_backport/blockstates/ginkgo_log.json",
-          "src/main/resources/assets/mud_backport/models/item/ginkgo_log.json"
+          "src/main/java/net/mcreator/mudbackport/block/GinkgoLogBlock.java",
+          "src/main/resources/assets/mud_backport/models/item/ginkgo_log.json",
+          "src/main/resources/assets/mud_backport/blockstates/ginkgo_log.json"
         ]
       },
       "path": "~/Ginkgo_Tree"
@@ -631,9 +631,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/mud_backport/blockstates/ginkgo_planks.json",
+          "src/main/java/net/mcreator/mudbackport/block/GinkgoPlanksBlock.java",
           "src/main/resources/assets/mud_backport/models/block/ginkgo_planks.json",
-          "src/main/resources/assets/mud_backport/models/item/ginkgo_planks.json",
-          "src/main/java/net/mcreator/mudbackport/block/GinkgoPlanksBlock.java"
+          "src/main/resources/assets/mud_backport/models/item/ginkgo_planks.json"
         ]
       },
       "path": "~/Ginkgo_Tree"
@@ -647,8 +647,8 @@
       "registry_name": "ginkgo_leaves",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mud_backport/models/block/ginkgo_leaves.json",
           "src/main/java/net/mcreator/mudbackport/block/GinkgoLeavesBlock.java",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_leaves.json",
           "src/main/resources/assets/mud_backport/models/item/ginkgo_leaves.json",
           "src/main/resources/assets/mud_backport/blockstates/ginkgo_leaves.json"
         ]
@@ -666,10 +666,10 @@
         "files": [
           "src/main/resources/assets/mud_backport/models/block/ginkgo_stairs.json",
           "src/main/java/net/mcreator/mudbackport/block/GinkgoStairsBlock.java",
-          "src/main/resources/assets/mud_backport/models/block/ginkgo_stairs_outer.json",
           "src/main/resources/assets/mud_backport/models/item/ginkgo_stairs.json",
-          "src/main/resources/assets/mud_backport/models/block/ginkgo_stairs_inner.json",
-          "src/main/resources/assets/mud_backport/blockstates/ginkgo_stairs.json"
+          "src/main/resources/assets/mud_backport/blockstates/ginkgo_stairs.json",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_stairs_outer.json",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_stairs_inner.json"
         ]
       },
       "path": "~/Ginkgo_Tree"
@@ -683,12 +683,12 @@
       "registry_name": "ginkgo_slab",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mud_backport/blockstates/ginkgo_slab.json",
           "src/main/resources/assets/mud_backport/models/block/ginkgo_slab_full.json",
-          "src/main/java/net/mcreator/mudbackport/block/GinkgoSlabBlock.java",
           "src/main/resources/assets/mud_backport/models/block/ginkgo_slab.json",
-          "src/main/resources/assets/mud_backport/models/item/ginkgo_slab.json",
-          "src/main/resources/assets/mud_backport/models/block/ginkgo_slab_top.json"
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_slab_top.json",
+          "src/main/java/net/mcreator/mudbackport/block/GinkgoSlabBlock.java",
+          "src/main/resources/assets/mud_backport/blockstates/ginkgo_slab.json",
+          "src/main/resources/assets/mud_backport/models/item/ginkgo_slab.json"
         ]
       },
       "path": "~/Ginkgo_Tree"
@@ -702,12 +702,12 @@
       "registry_name": "ginkgo_fence",
       "metadata": {
         "files": [
+          "src/main/resources/assets/mud_backport/models/item/ginkgo_fence.json",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_fence.json",
           "src/main/resources/assets/mud_backport/models/block/ginkgo_fence_inventory.json",
           "src/main/resources/assets/mud_backport/blockstates/ginkgo_fence.json",
-          "src/main/java/net/mcreator/mudbackport/block/GinkgoFenceBlock.java",
-          "src/main/resources/assets/mud_backport/models/item/ginkgo_fence.json",
           "src/main/resources/assets/mud_backport/models/block/ginkgo_fence_post.json",
-          "src/main/resources/assets/mud_backport/models/block/ginkgo_fence.json"
+          "src/main/java/net/mcreator/mudbackport/block/GinkgoFenceBlock.java"
         ]
       },
       "path": "~/Ginkgo_Tree"
@@ -721,11 +721,11 @@
       "registry_name": "ginkgo_fence_gate",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mudbackport/block/GinkgoFenceGateBlock.java",
-          "src/main/resources/assets/mud_backport/blockstates/ginkgo_fence_gate.json",
-          "src/main/resources/assets/mud_backport/models/block/ginkgo_fence_gate_open.json",
-          "src/main/resources/assets/mud_backport/models/block/ginkgo_fence_gate_wall.json",
           "src/main/resources/assets/mud_backport/models/item/ginkgo_fence_gate.json",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_fence_gate_wall.json",
+          "src/main/resources/assets/mud_backport/blockstates/ginkgo_fence_gate.json",
+          "src/main/java/net/mcreator/mudbackport/block/GinkgoFenceGateBlock.java",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_fence_gate_open.json",
           "src/main/resources/assets/mud_backport/models/block/ginkgo_fence_gate.json",
           "src/main/resources/assets/mud_backport/models/block/ginkgo_fence_gate_wall_open.json"
         ]
@@ -742,10 +742,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mudbackport/block/GinkgoPressurePlateBlock.java",
-          "src/main/resources/assets/mud_backport/models/item/ginkgo_pressure_plate.json",
           "src/main/resources/assets/mud_backport/blockstates/ginkgo_pressure_plate.json",
-          "src/main/resources/assets/mud_backport/models/block/ginkgo_pressure_plate.json",
-          "src/main/resources/assets/mud_backport/models/block/ginkgo_pressure_plate_down.json"
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_pressure_plate_down.json",
+          "src/main/resources/assets/mud_backport/models/item/ginkgo_pressure_plate.json",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_pressure_plate.json"
         ]
       },
       "path": "~/Ginkgo_Tree"
@@ -759,11 +759,11 @@
       "registry_name": "ginkgo_button",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mud_backport/models/item/ginkgo_button.json",
           "src/main/resources/assets/mud_backport/blockstates/ginkgo_button.json",
-          "src/main/resources/assets/mud_backport/models/block/ginkgo_button_inventory.json",
           "src/main/java/net/mcreator/mudbackport/block/GinkgoButtonBlock.java",
           "src/main/resources/assets/mud_backport/models/block/ginkgo_button.json",
+          "src/main/resources/assets/mud_backport/models/block/ginkgo_button_inventory.json",
+          "src/main/resources/assets/mud_backport/models/item/ginkgo_button.json",
           "src/main/resources/assets/mud_backport/models/block/ginkgo_button_pressed.json"
         ]
       },
@@ -918,9 +918,9 @@
       "registry_name": "araucaria_wood",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mudbackport/block/AraucariaWoodBlock.java",
           "src/main/resources/assets/mud_backport/models/item/araucaria_wood.json",
           "src/main/resources/assets/mud_backport/blockstates/araucaria_wood.json",
+          "src/main/java/net/mcreator/mudbackport/block/AraucariaWoodBlock.java",
           "src/main/resources/assets/mud_backport/models/block/araucaria_wood.json"
         ]
       },
@@ -936,9 +936,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/mud_backport/models/item/araucaria_log.json",
-          "src/main/resources/assets/mud_backport/models/block/araucaria_log.json",
+          "src/main/java/net/mcreator/mudbackport/block/AraucariaLogBlock.java",
           "src/main/resources/assets/mud_backport/blockstates/araucaria_log.json",
-          "src/main/java/net/mcreator/mudbackport/block/AraucariaLogBlock.java"
+          "src/main/resources/assets/mud_backport/models/block/araucaria_log.json"
         ]
       },
       "path": "~/Araucaria_Tree"
@@ -954,8 +954,8 @@
         "files": [
           "src/main/resources/assets/mud_backport/models/item/araucaria_planks.json",
           "src/main/resources/assets/mud_backport/blockstates/araucaria_planks.json",
-          "src/main/resources/assets/mud_backport/models/block/araucaria_planks.json",
-          "src/main/java/net/mcreator/mudbackport/block/AraucariaPlanksBlock.java"
+          "src/main/java/net/mcreator/mudbackport/block/AraucariaPlanksBlock.java",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_planks.json"
         ]
       },
       "path": "~/Araucaria_Tree"
@@ -970,9 +970,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/mud_backport/models/item/araucaria_leaves.json",
-          "src/main/resources/assets/mud_backport/blockstates/araucaria_leaves.json",
           "src/main/resources/assets/mud_backport/models/block/araucaria_leaves.json",
-          "src/main/java/net/mcreator/mudbackport/block/AraucariaLeavesBlock.java"
+          "src/main/java/net/mcreator/mudbackport/block/AraucariaLeavesBlock.java",
+          "src/main/resources/assets/mud_backport/blockstates/araucaria_leaves.json"
         ]
       },
       "path": "~/Araucaria_Tree"
@@ -987,11 +987,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/mud_backport/models/block/araucaria_stairs.json",
-          "src/main/resources/assets/mud_backport/models/block/araucaria_stairs_outer.json",
-          "src/main/java/net/mcreator/mudbackport/block/AraucariaStairsBlock.java",
           "src/main/resources/assets/mud_backport/models/item/araucaria_stairs.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_stairs_outer.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_stairs_inner.json",
           "src/main/resources/assets/mud_backport/blockstates/araucaria_stairs.json",
-          "src/main/resources/assets/mud_backport/models/block/araucaria_stairs_inner.json"
+          "src/main/java/net/mcreator/mudbackport/block/AraucariaStairsBlock.java"
         ]
       },
       "path": "~/Araucaria_Tree"
@@ -1005,12 +1005,12 @@
       "registry_name": "araucaria_slab",
       "metadata": {
         "files": [
+          "src/main/resources/assets/mud_backport/models/block/araucaria_slab_top.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_slab.json",
           "src/main/resources/assets/mud_backport/models/item/araucaria_slab.json",
           "src/main/resources/assets/mud_backport/blockstates/araucaria_slab.json",
-          "src/main/java/net/mcreator/mudbackport/block/AraucariaSlabBlock.java",
-          "src/main/resources/assets/mud_backport/models/block/araucaria_slab.json",
           "src/main/resources/assets/mud_backport/models/block/araucaria_slab_full.json",
-          "src/main/resources/assets/mud_backport/models/block/araucaria_slab_top.json"
+          "src/main/java/net/mcreator/mudbackport/block/AraucariaSlabBlock.java"
         ]
       },
       "path": "~/Araucaria_Tree"
@@ -1024,12 +1024,12 @@
       "registry_name": "araucaria_fence",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mud_backport/models/block/araucaria_fence.json",
-          "src/main/java/net/mcreator/mudbackport/block/AraucariaFenceBlock.java",
           "src/main/resources/assets/mud_backport/models/block/araucaria_fence_inventory.json",
+          "src/main/java/net/mcreator/mudbackport/block/AraucariaFenceBlock.java",
+          "src/main/resources/assets/mud_backport/blockstates/araucaria_fence.json",
           "src/main/resources/assets/mud_backport/models/block/araucaria_fence_post.json",
-          "src/main/resources/assets/mud_backport/models/item/araucaria_fence.json",
-          "src/main/resources/assets/mud_backport/blockstates/araucaria_fence.json"
+          "src/main/resources/assets/mud_backport/models/block/araucaria_fence.json",
+          "src/main/resources/assets/mud_backport/models/item/araucaria_fence.json"
         ]
       },
       "path": "~/Araucaria_Tree"
@@ -1044,12 +1044,12 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mudbackport/block/AraucariaFenceGateBlock.java",
-          "src/main/resources/assets/mud_backport/blockstates/araucaria_fence_gate.json",
-          "src/main/resources/assets/mud_backport/models/block/araucaria_fence_gate_wall_open.json",
           "src/main/resources/assets/mud_backport/models/block/araucaria_fence_gate_wall.json",
-          "src/main/resources/assets/mud_backport/models/item/araucaria_fence_gate.json",
+          "src/main/resources/assets/mud_backport/blockstates/araucaria_fence_gate.json",
           "src/main/resources/assets/mud_backport/models/block/araucaria_fence_gate.json",
-          "src/main/resources/assets/mud_backport/models/block/araucaria_fence_gate_open.json"
+          "src/main/resources/assets/mud_backport/models/block/araucaria_fence_gate_open.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_fence_gate_wall_open.json",
+          "src/main/resources/assets/mud_backport/models/item/araucaria_fence_gate.json"
         ]
       },
       "path": "~/Araucaria_Tree"
@@ -1063,11 +1063,11 @@
       "registry_name": "araucaria_pressure_plate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mud_backport/models/item/araucaria_pressure_plate.json",
+          "src/main/resources/assets/mud_backport/blockstates/araucaria_pressure_plate.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_pressure_plate_down.json",
           "src/main/resources/assets/mud_backport/models/block/araucaria_pressure_plate.json",
           "src/main/java/net/mcreator/mudbackport/block/AraucariaPressurePlateBlock.java",
-          "src/main/resources/assets/mud_backport/models/block/araucaria_pressure_plate_down.json",
-          "src/main/resources/assets/mud_backport/blockstates/araucaria_pressure_plate.json"
+          "src/main/resources/assets/mud_backport/models/item/araucaria_pressure_plate.json"
         ]
       },
       "path": "~/Araucaria_Tree"
@@ -1081,10 +1081,10 @@
       "registry_name": "araucaria_button",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mud_backport/models/item/araucaria_button.json",
           "src/main/resources/assets/mud_backport/blockstates/araucaria_button.json",
-          "src/main/resources/assets/mud_backport/models/block/araucaria_button_pressed.json",
           "src/main/resources/assets/mud_backport/models/block/araucaria_button.json",
+          "src/main/resources/assets/mud_backport/models/item/araucaria_button.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_button_pressed.json",
           "src/main/java/net/mcreator/mudbackport/block/AraucariaButtonBlock.java",
           "src/main/resources/assets/mud_backport/models/block/araucaria_button_inventory.json"
         ]
@@ -1240,10 +1240,10 @@
       "registry_name": "araucarianeedles",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mud_backport/models/block/araucarianeedles.json",
           "src/main/resources/assets/mud_backport/models/item/araucarianeedles.json",
-          "src/main/resources/assets/mud_backport/blockstates/araucarianeedles.json",
-          "src/main/java/net/mcreator/mudbackport/block/AraucarianeedlesBlock.java"
+          "src/main/resources/assets/mud_backport/models/block/araucarianeedles.json",
+          "src/main/java/net/mcreator/mudbackport/block/AraucarianeedlesBlock.java",
+          "src/main/resources/assets/mud_backport/blockstates/araucarianeedles.json"
         ]
       },
       "path": "~/Araucaria_Tree"
@@ -1257,13 +1257,13 @@
       "registry_name": "araucaria_door",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mud_backport/models/block/araucaria_door_top.json",
-          "src/main/resources/assets/mud_backport/models/item/araucaria_door.json",
-          "src/main/resources/assets/mud_backport/models/block/araucaria_door_top_hinge.json",
-          "src/main/java/net/mcreator/mudbackport/block/AraucariaDoorBlock.java",
-          "src/main/resources/assets/mud_backport/blockstates/araucaria_door.json",
           "src/main/resources/assets/mud_backport/models/block/araucaria_door_bottom.json",
-          "src/main/resources/assets/mud_backport/models/block/araucaria_door_bottom_hinge.json"
+          "src/main/resources/assets/mud_backport/blockstates/araucaria_door.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_door_top.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_door_bottom_hinge.json",
+          "src/main/resources/assets/mud_backport/models/item/araucaria_door.json",
+          "src/main/java/net/mcreator/mudbackport/block/AraucariaDoorBlock.java",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_door_top_hinge.json"
         ]
       },
       "path": "~/Araucaria_Tree"
@@ -1278,10 +1278,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mudbackport/block/AraucariaTrapdoorBlock.java",
-          "src/main/resources/assets/mud_backport/models/block/araucaria_trapdoor.json",
           "src/main/resources/assets/mud_backport/blockstates/araucaria_trapdoor.json",
-          "src/main/resources/assets/mud_backport/models/block/araucaria_trapdoor_top.json",
           "src/main/resources/assets/mud_backport/models/block/araucaria_trapdoor_open.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_trapdoor.json",
+          "src/main/resources/assets/mud_backport/models/block/araucaria_trapdoor_top.json",
           "src/main/resources/assets/mud_backport/models/item/araucaria_trapdoor.json"
         ]
       },
@@ -1326,8 +1326,8 @@
         "files": [
           "src/main/java/net/mcreator/mudbackport/block/AraucariaBranchsBlock.java",
           "src/main/resources/assets/mud_backport/models/item/araucaria_branchs.json",
-          "src/main/resources/assets/mud_backport/blockstates/araucaria_branchs.json",
-          "src/main/resources/assets/mud_backport/models/block/araucaria_branchs.json"
+          "src/main/resources/assets/mud_backport/models/block/araucaria_branchs.json",
+          "src/main/resources/assets/mud_backport/blockstates/araucaria_branchs.json"
         ]
       },
       "path": "~/Araucaria_Tree"
@@ -1341,8 +1341,8 @@
       "registry_name": "stripped_araucaria_log",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mud_backport/blockstates/stripped_araucaria_log.json",
           "src/main/java/net/mcreator/mudbackport/block/StrippedAraucariaLogBlock.java",
+          "src/main/resources/assets/mud_backport/blockstates/stripped_araucaria_log.json",
           "src/main/resources/assets/mud_backport/models/item/stripped_araucaria_log.json",
           "src/main/resources/assets/mud_backport/models/block/stripped_araucaria_log.json"
         ]
@@ -1358,10 +1358,10 @@
       "registry_name": "stripped_araucaria_wood",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mud_backport/blockstates/stripped_araucaria_wood.json",
+          "src/main/resources/assets/mud_backport/models/item/stripped_araucaria_wood.json",
           "src/main/resources/assets/mud_backport/models/block/stripped_araucaria_wood.json",
-          "src/main/java/net/mcreator/mudbackport/block/StrippedAraucariaWoodBlock.java",
-          "src/main/resources/assets/mud_backport/models/item/stripped_araucaria_wood.json"
+          "src/main/resources/assets/mud_backport/blockstates/stripped_araucaria_wood.json",
+          "src/main/java/net/mcreator/mudbackport/block/StrippedAraucariaWoodBlock.java"
         ]
       },
       "path": "~/Araucaria_Tree"
