@@ -1379,6 +1379,20 @@
         ]
       },
       "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "GinkgoParticles",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ginkgo_particles",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/particles/ginkgo_particles.json",
+          "src/main/java/net/mcreator/mudbackport/client/particle/GinkgoParticlesParticle.java"
+        ]
+      },
+      "path": "~/Ginkgo_Tree"
     }
   ],
   "variable_elements": [],
