@@ -1,6 +1,7 @@
 
 package net.mcreator.mudbackport.block;
 
+import net.minecraft.tags.BlockTags;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -59,7 +60,7 @@ public class AraucarianeedlesBlock extends FlowerBlock {
 
 	@Override
 	public boolean mayPlaceOn(BlockState groundState, BlockGetter worldIn, BlockPos pos) {
-		return groundState.is(MudBackportModBlocks.ARAUCARIA_LEAVES.get()) || groundState.is(Blocks.OAK_LEAVES) || groundState.is(MudBackportModBlocks.GINKGO_LEAVES.get());
+		return groundState.is(BlockTags.LEAVES);
 	}
 
 	@Override
