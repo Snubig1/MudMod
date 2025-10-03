@@ -14,6 +14,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.FlowerBlock;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.effect.MobEffects;
@@ -53,6 +54,18 @@ public class AraucarianeedlesBlock extends FlowerBlock {
 	@Override
 	public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
 		return 60;
+	}
+
+	@Override
+	public boolean mayPlaceOn(BlockState groundState, BlockGetter worldIn, BlockPos pos) {
+		return groundState.is(MudBackportModBlocks.ARAUCARIA_LEAVES.get());
+	}
+
+	@Override
+	public boolean canSurvive(BlockState blockstate, LevelReader worldIn, BlockPos pos) {
+		BlockPos blockpos = pos.below();
+		BlockState groundState = worldIn.getBlockState(blockpos);
+		return this.mayPlaceOn(groundState, worldIn, blockpos);
 	}
 
 	@OnlyIn(Dist.CLIENT)

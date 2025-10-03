@@ -78,7 +78,11 @@
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
-    "canBePlacedOn": [],
+    "canBePlacedOn": [
+      {
+        "value": "CUSTOM:AraucariaLeaves"
+      }
+    ],
     "isBonemealable": false,
     "frequencyOnChunks": 0,
     "spawnWorldTypes": [],
