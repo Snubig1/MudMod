@@ -78,17 +78,7 @@
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
-    "canBePlacedOn": [
-      {
-        "value": "CUSTOM:AraucariaLeaves"
-      },
-      {
-        "value": "Blocks.LEAVES"
-      },
-      {
-        "value": "CUSTOM:GinkgoLeaves"
-      }
-    ],
+    "canBePlacedOn": [],
     "isBonemealable": false,
     "frequencyOnChunks": 0,
     "spawnWorldTypes": [],
