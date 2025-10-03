@@ -84,7 +84,7 @@ public class MudBackportModBlocks {
 	public static final RegistryObject<Block> ARAUCARIA_FENCE_GATE = REGISTRY.register("araucaria_fence_gate", () -> new AraucariaFenceGateBlock());
 	public static final RegistryObject<Block> ARAUCARIA_PRESSURE_PLATE = REGISTRY.register("araucaria_pressure_plate", () -> new AraucariaPressurePlateBlock());
 	public static final RegistryObject<Block> ARAUCARIA_BUTTON = REGISTRY.register("araucaria_button", () -> new AraucariaButtonBlock());
-	public static final RegistryObject<Block> ARAUCARIANEEDLES = REGISTRY.register("araucarianeedles", () -> new AraucarianeedlesBlock());
+	public static final RegistryObject<Block> ARAUCARIA_NEEDLES = REGISTRY.register("araucaria_needles", () -> new AraucarianeedlesBlock());
 	public static final RegistryObject<Block> ARAUCARIA_DOOR = REGISTRY.register("araucaria_door", () -> new AraucariaDoorBlock());
 	public static final RegistryObject<Block> ARAUCARIA_TRAPDOOR = REGISTRY.register("araucaria_trapdoor", () -> new AraucariaTrapdoorBlock());
 	public static final RegistryObject<Block> ARAUCARIA_BRANCHS = REGISTRY.register("araucaria_branchs", () -> new AraucariaBranchsBlock());

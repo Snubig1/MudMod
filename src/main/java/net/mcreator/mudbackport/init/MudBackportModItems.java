@@ -48,7 +48,7 @@ public class MudBackportModItems {
 	public static final RegistryObject<Item> ARAUCARIA_FENCE_GATE = block(MudBackportModBlocks.ARAUCARIA_FENCE_GATE, MudBackportModTabs.TAB_MUDMODTAB);
 	public static final RegistryObject<Item> ARAUCARIA_PRESSURE_PLATE = block(MudBackportModBlocks.ARAUCARIA_PRESSURE_PLATE, MudBackportModTabs.TAB_MUDMODTAB);
 	public static final RegistryObject<Item> ARAUCARIA_BUTTON = block(MudBackportModBlocks.ARAUCARIA_BUTTON, MudBackportModTabs.TAB_MUDMODTAB);
-	public static final RegistryObject<Item> ARAUCARIANEEDLES = block(MudBackportModBlocks.ARAUCARIANEEDLES, MudBackportModTabs.TAB_MUDMODTAB);
+	public static final RegistryObject<Item> ARAUCARIA_NEEDLES = block(MudBackportModBlocks.ARAUCARIA_NEEDLES, MudBackportModTabs.TAB_MUDMODTAB);
 	public static final RegistryObject<Item> ARAUCARIA_DOOR = doubleBlock(MudBackportModBlocks.ARAUCARIA_DOOR, MudBackportModTabs.TAB_MUDMODTAB);
 	public static final RegistryObject<Item> ARAUCARIA_TRAPDOOR = block(MudBackportModBlocks.ARAUCARIA_TRAPDOOR, MudBackportModTabs.TAB_MUDMODTAB);
 	public static final RegistryObject<Item> ARAUCARIA_BRANCHS = block(MudBackportModBlocks.ARAUCARIA_BRANCHS, MudBackportModTabs.TAB_MUDMODTAB);

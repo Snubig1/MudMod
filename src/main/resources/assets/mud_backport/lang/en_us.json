@@ -1,5 +1,4 @@
 {
-  "block.mud_backport.araucarianeedles": "Araucaria needles",
   "block.mud_backport.araucaria_planks": "Araucaria Planks",
   "block.mud_backport.araucaria_leaves": "Araucaria Leaves",
   "block.mud_backport.reinforced_glass_panes": "Reinforced Glass Panes",
@@ -29,6 +28,7 @@
   "block.mud_backport.araucaria_button": "Araucaria Button",
   "block.mud_backport.mud_bricks": "Mud Bricks",
   "subtitles.mud_step": "",
+  "block.mud_backport.araucaria_needles": "Araucaria needles",
   "block.mud_backport.ginkgo_log": "Ginkgo Log",
   "itemGroup.tabmudmodtab": "Mud mod and stuff",
   "subtitles.muddy_roots_step": "",
