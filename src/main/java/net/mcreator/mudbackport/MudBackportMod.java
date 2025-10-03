@@ -27,6 +27,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.mudbackport.init.MudBackportModTabs;
+import net.mcreator.mudbackport.init.MudBackportModParticleTypes;
 import net.mcreator.mudbackport.init.MudBackportModItems;
 import net.mcreator.mudbackport.init.MudBackportModBlocks;
 
@@ -48,6 +49,7 @@ public class MudBackportMod {
 		MudBackportModBlocks.REGISTRY.register(bus);
 		MudBackportModItems.REGISTRY.register(bus);
 
+		MudBackportModParticleTypes.REGISTRY.register(bus);
 	}
 
 	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder, BiConsumer<T, Supplier<NetworkEvent.Context>> messageConsumer) {

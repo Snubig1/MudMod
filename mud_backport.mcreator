@@ -1379,6 +1379,20 @@
         ]
       },
       "path": "~/Araucaria_Tree"
+    },
+    {
+      "name": "GinkgoParticles",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ginkgo_particles",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mud_backport/particles/ginkgo_particles.json",
+          "src/main/java/net/mcreator/mudbackport/client/particle/GinkgoParticlesParticle.java"
+        ]
+      },
+      "path": "~/Ginkgo_Tree"
     }
   ],
   "variable_elements": [],
@@ -1525,6 +1539,7 @@
   ],
   "language_map": {
     "en_us": {
+      "block.mud_backport.araucarianeedles": "Araucaria needles",
       "block.mud_backport.araucaria_planks": "Araucaria Planks",
       "block.mud_backport.araucaria_leaves": "Araucaria Leaves",
       "block.mud_backport.reinforced_glass_panes": "Reinforced Glass Panes",
@@ -1582,15 +1597,15 @@
     "name": "~",
     "children": [
       {
-        "name": "Ginkgo_Tree",
-        "children": []
-      },
-      {
         "name": "Araucaria_Tree",
         "children": []
       },
       {
         "name": "Mud",
+        "children": []
+      },
+      {
+        "name": "Ginkgo_Tree",
         "children": []
       },
       {

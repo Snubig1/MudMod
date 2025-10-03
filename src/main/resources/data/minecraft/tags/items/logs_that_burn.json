@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#mud_backport:ginkgo_log",
-    "#mud_backport:araucaria_log"
+    "#forge:ginkgo_log",
+    "#forge:araucaria_log"
   ]
 }
