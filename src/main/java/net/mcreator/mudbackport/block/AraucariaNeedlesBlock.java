@@ -1,6 +1,7 @@
 
 package net.mcreator.mudbackport.block;
 
+import net.minecraft.tags.BlockTags;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -25,8 +26,8 @@ import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.mudbackport.init.MudBackportModBlocks;
 
-public class AraucarianeedlesBlock extends FlowerBlock {
-	public AraucarianeedlesBlock() {
+public class AraucariaNeedlesBlock extends FlowerBlock {
+	public AraucariaNeedlesBlock() {
 		super(MobEffects.LUCK, 200, BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.NONE).sound(SoundType.GRASS).instabreak().noCollission());
 	}
 
@@ -58,7 +59,7 @@ public class AraucarianeedlesBlock extends FlowerBlock {
 
 	@Override
 	public boolean mayPlaceOn(BlockState groundState, BlockGetter worldIn, BlockPos pos) {
-		return groundState.is(MudBackportModBlocks.ARAUCARIA_LEAVES.get());
+		return groundState.is(BlockTags.LEAVES);
 	}
 
 	@Override
@@ -70,6 +71,6 @@ public class AraucarianeedlesBlock extends FlowerBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(MudBackportModBlocks.ARAUCARIANEEDLES.get(), renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(MudBackportModBlocks.ARAUCARIA_NEEDLES.get(), renderType -> renderType == RenderType.cutout());
 	}
 }
