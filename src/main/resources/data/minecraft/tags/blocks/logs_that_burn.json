@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:ginkgo_logs",
+    "#forge:araucaria_logs"
+  ]
+}

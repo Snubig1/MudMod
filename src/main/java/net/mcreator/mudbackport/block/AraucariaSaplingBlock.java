@@ -2,6 +2,7 @@
 package net.mcreator.mudbackport.block;
 
 import net.mcreator.mudbackport.init.MudBackportModBlocks;
+import net.mcreator.mudbackport.world.feature.tree.AraucariaTreeGrower;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
@@ -23,7 +24,7 @@ import java.util.Collections;
 
 public class AraucariaSaplingBlock extends SaplingBlock {
     public AraucariaSaplingBlock() {
-        super(new OakTreeGrower(),BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING));
+        super(new AraucariaTreeGrower(),BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING));
     }
 
     @Override
