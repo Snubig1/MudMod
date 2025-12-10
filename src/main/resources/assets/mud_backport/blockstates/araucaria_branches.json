@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "mud_backport:block/araucaria_branches",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "mud_backport:block/araucaria_branches"
+    },
+    "axis=z": {
+      "model": "mud_backport:block/araucaria_branches",
+      "x": 90
+    }
+  }
+}

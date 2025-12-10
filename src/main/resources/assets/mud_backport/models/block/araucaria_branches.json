@@ -1,5 +1,5 @@
 {
-  "parent": "mud_backport:custom/araucaria_branchs",
+  "parent": "mud_backport:custom/araucaria_branches",
   "textures": {
     "all": "mud_backport:blocks/araucaria_branch_side",
     "particle": "mud_backport:blocks/araucaria_branch_side",

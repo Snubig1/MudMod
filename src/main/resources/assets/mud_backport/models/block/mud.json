@@ -1,12 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "down": "mud_backport:blocks/mud",
-    "up": "mud_backport:blocks/mud",
-    "north": "mud_backport:blocks/mud",
-    "east": "mud_backport:blocks/mud",
-    "south": "mud_backport:blocks/mud",
-    "west": "mud_backport:blocks/mud",
+    "all": "mud_backport:blocks/mud",
     "particle": "mud_backport:blocks/mud"
   }
 }

@@ -53,7 +53,7 @@ public class MudBackportModBlocks {
 	public static final RegistryObject<Block> ARAUCARIA_NEEDLES = REGISTRY.register("araucaria_needles", AraucariaNeedlesBlock::new);
 	public static final RegistryObject<Block> ARAUCARIA_DOOR = REGISTRY.register("araucaria_door", AraucariaDoorBlock::new);
 	public static final RegistryObject<Block> ARAUCARIA_TRAPDOOR = REGISTRY.register("araucaria_trapdoor", AraucariaTrapdoorBlock::new);
-	public static final RegistryObject<Block> ARAUCARIA_BRANCHS = REGISTRY.register("araucaria_branchs", AraucariaBranchsBlock::new);;
+	public static final RegistryObject<Block> ARAUCARIA_BRANCHES = REGISTRY.register("araucaria_branches", AraucariaBranchesBlock::new);;
 	public static final RegistryObject<Block> STRIPPED_ARAUCARIA_LOG = REGISTRY.register("stripped_araucaria_log", StrippedAraucariaLogBlock::new);
 	public static final RegistryObject<Block> STRIPPED_ARAUCARIA_WOOD = REGISTRY.register("stripped_araucaria_wood", StrippedAraucariaWoodBlock::new);
 
@@ -64,14 +64,13 @@ public class MudBackportModBlocks {
 		@SubscribeEvent
 		public static void clientSetup(FMLClientSetupEvent event) {
             AraucariaSaplingBlock.registerRenderLayer();
-			MudBlock.registerRenderLayer();
 			RootsBlock.registerRenderLayer();
 			ReinforcedGlassPanesBlock.registerRenderLayer();
 			InfoStandBlock.registerRenderLayer();
 			AraucariaNeedlesBlock.registerRenderLayer();
 			AraucariaDoorBlock.registerRenderLayer();
 			AraucariaTrapdoorBlock.registerRenderLayer();
-			AraucariaBranchsBlock.registerRenderLayer();
+			AraucariaBranchesBlock.registerRenderLayer();
 		}
 	}
 }

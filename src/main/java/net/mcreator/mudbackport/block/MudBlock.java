@@ -1,6 +1,8 @@
 
 package net.mcreator.mudbackport.block;
 
+import net.minecraft.world.level.block.SupportType;
+import net.minecraft.world.level.material.*;
 import net.minecraftforge.common.util.ForgeSoundType;
 import net.minecraftforge.common.IPlantable;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -10,10 +12,6 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootContext;
-import net.minecraft.world.level.material.MaterialColor;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.Fluids;
-import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -42,6 +40,7 @@ import java.util.Collections;
 
 public class MudBlock extends Block implements SimpleWaterloggedBlock {
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
+    protected static final VoxelShape SHAPE = Block.box((double)0.0F, (double)0.0F, (double)0.0F, (double)16.0F, (double)14.0F, (double)16.0F);
 
 	public MudBlock() {
 		super(BlockBehaviour.Properties.of(Material.DIRT, MaterialColor.TERRACOTTA_CYAN)
@@ -56,15 +55,23 @@ public class MudBlock extends Block implements SimpleWaterloggedBlock {
 		return 15;
 	}
 
-	@Override
-	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return Shapes.empty();
-	}
+    @Override
+    public VoxelShape getCollisionShape(BlockState p_56702_, BlockGetter p_56703_, BlockPos p_56704_, CollisionContext p_56705_) {
+        return SHAPE;
+    }
 
-	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return box(0, 0, 0, 16, 15, 16);
-	}
+    @Override
+    public VoxelShape getBlockSupportShape(BlockState p_56707_, BlockGetter p_56708_, BlockPos p_56709_) {
+        return Shapes.block();
+    }
+
+    @Override
+    public VoxelShape getVisualShape(BlockState p_56684_, BlockGetter p_56685_, BlockPos p_56686_, CollisionContext p_56687_) {
+        return Shapes.block();
+    }
+
+    @Override
+    public boolean canPlaceLiquid(BlockGetter p_54766_, BlockPos p_54767_, BlockState p_54768_, Fluid p_54769_) {return false;}
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
@@ -110,10 +117,5 @@ public class MudBlock extends Block implements SimpleWaterloggedBlock {
 		int y = pos.getY();
 		int z = pos.getZ();
 		MudUpdateTickProcedure.execute(world, x, y, z);
-	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(MudBackportModBlocks.MUD.get(), renderType -> renderType == RenderType.cutout());
 	}
 }
