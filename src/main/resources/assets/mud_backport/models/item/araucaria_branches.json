@@ -1,5 +1,5 @@
 {
-  "parent": "mud_backport:block/araucaria_branchs",
+  "parent": "mud_backport:block/araucaria_branches",
   "display": {
     "thirdperson": {
       "rotation": [

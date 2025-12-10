@@ -10,7 +10,7 @@ credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
 authors="Snubig1"
 description='''
-A quick backport of mud and its relatives to 1.18.2
+A quick backport of mud and its relatives (and "a few" other things) to 1.18.2
 '''
 
 [[dependencies.mud_backport]]
@@ -19,6 +19,13 @@ A quick backport of mud and its relatives to 1.18.2
     versionRange="[1.18.2]"
     ordering="NONE"
     side="BOTH"
+
+[[dependencies.mud_backport]]
+modId="terrablender"
+mandatory=true
+versionRange="[1.2.0.126]"
+ordering="NONE"
+side="BOTH"
 
 
 

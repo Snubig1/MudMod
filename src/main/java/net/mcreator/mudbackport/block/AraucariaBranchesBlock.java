@@ -38,11 +38,11 @@ import net.mcreator.mudbackport.init.MudBackportModBlocks;
 import java.util.List;
 import java.util.Collections;
 
-public class AraucariaBranchsBlock extends Block implements SimpleWaterloggedBlock {
+public class AraucariaBranchesBlock extends Block implements SimpleWaterloggedBlock {
 	public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
-	public AraucariaBranchsBlock() {
+	public AraucariaBranchesBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.TERRACOTTA_LIGHT_GRAY)
 				.sound(new ForgeSoundType(1.0f, 1.0f, () -> new SoundEvent(new ResourceLocation("mud_backport:roots_break")), () -> new SoundEvent(new ResourceLocation("mud_backport:roots_step")),
 						() -> new SoundEvent(new ResourceLocation("mud_backport:roots_break")), () -> new SoundEvent(new ResourceLocation("mud_backport:roots_step")), () -> new SoundEvent(new ResourceLocation("mud_backport:roots_step"))))
@@ -116,6 +116,6 @@ public class AraucariaBranchsBlock extends Block implements SimpleWaterloggedBlo
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(MudBackportModBlocks.ARAUCARIA_BRANCHS.get(), renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(MudBackportModBlocks.ARAUCARIA_BRANCHES.get(), renderType -> renderType == RenderType.cutout());
 	}
 }
