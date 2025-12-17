@@ -1,0 +1,30 @@
+{
+  "textures": {
+    "particle": "mud_backport:blocks/snowy_araucaria_leaves"
+  },
+  "render_type": "cutout",
+  "elements": [
+    {   "from": [ 0, 0, 0 ],
+      "to": [ 16, 16, 16 ],
+      "faces": {
+        "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "mud_backport:blocks/araucaria_leaves"},
+        "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "mud_backport:blocks/araucaria_leaves" },
+        "north": { "uv": [ 0, 0, 16, 16 ], "texture": "mud_backport:blocks/snowy_araucaria_leaves"},
+        "south": { "uv": [ 0, 0, 16, 16 ], "texture": "mud_backport:blocks/snowy_araucaria_leaves"},
+        "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "mud_backport:blocks/snowy_araucaria_leaves"},
+        "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "mud_backport:blocks/snowy_araucaria_leaves"}
+      }
+    },
+    {   "from": [ 0, 16, 0 ],
+      "to": [ 16, 18, 16 ],
+      "faces": {
+        "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "minecraft:blocks/snow"},
+        "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "minecraft:blocks/snow" },
+        "north": { "uv": [ 0, 14, 16, 16 ], "texture": "minecraft:blocks/snow"},
+        "south": { "uv": [ 0, 14, 16, 16 ], "texture": "minecraft:blocks/snow"},
+        "west":  { "uv": [ 0, 14, 16, 16 ], "texture": "minecraft:blocks/snow"},
+        "east":  { "uv": [ 0, 14, 16, 16 ], "texture": "minecraft:blocks/snow"}
+      }
+    }
+  ]
+}

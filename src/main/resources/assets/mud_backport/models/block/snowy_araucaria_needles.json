@@ -1,0 +1,8 @@
+{
+  "parent": "mud_backport:custom/araucaria_needles",
+  "textures": {
+    "all": "mud_backport:blocks/snowy_araucaria_needles",
+    "particle": "mud_backport:blocks/snowy_araucaria_needles",
+    "cross": "mud_backport:blocks/snowy_araucaria_needles"
+  }
+}

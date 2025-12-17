@@ -51,6 +51,7 @@ public class MudBackportModBlocks {
 	public static final RegistryObject<Block> ARAUCARIA_PRESSURE_PLATE = REGISTRY.register("araucaria_pressure_plate", AraucariaPressurePlateBlock::new);
 	public static final RegistryObject<Block> ARAUCARIA_BUTTON = REGISTRY.register("araucaria_button", AraucariaButtonBlock::new);
 	public static final RegistryObject<Block> ARAUCARIA_NEEDLES = REGISTRY.register("araucaria_needles", AraucariaNeedlesBlock::new);
+    public static final RegistryObject<Block> SNOWY_ARAUCARIA_NEEDLES = REGISTRY.register("snowy_araucaria_needles", SnowyAraucariaNeedlesBlock::new);
 	public static final RegistryObject<Block> ARAUCARIA_DOOR = REGISTRY.register("araucaria_door", AraucariaDoorBlock::new);
 	public static final RegistryObject<Block> ARAUCARIA_TRAPDOOR = REGISTRY.register("araucaria_trapdoor", AraucariaTrapdoorBlock::new);
 	public static final RegistryObject<Block> ARAUCARIA_BRANCHES = REGISTRY.register("araucaria_branches", AraucariaBranchesBlock::new);;
@@ -68,6 +69,7 @@ public class MudBackportModBlocks {
 			ReinforcedGlassPanesBlock.registerRenderLayer();
 			InfoStandBlock.registerRenderLayer();
 			AraucariaNeedlesBlock.registerRenderLayer();
+            SnowyAraucariaNeedlesBlock.registerRenderLayer();
 			AraucariaDoorBlock.registerRenderLayer();
 			AraucariaTrapdoorBlock.registerRenderLayer();
 			AraucariaBranchesBlock.registerRenderLayer();
