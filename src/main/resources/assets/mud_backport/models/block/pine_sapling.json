@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "mud_backport:blocks/pine_sapling"
+  }
+}
