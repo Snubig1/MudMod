@@ -1,6 +1,9 @@
 {
   "variants": {
-    "": {
+    "snowy=false": {
+      "model": "mud_backport:block/araucaria_leaves"
+    },
+    "snowy=true": {
       "model": "mud_backport:block/snowy_araucaria_leaves"
     }
   }

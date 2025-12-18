@@ -2,11 +2,16 @@
 package net.mcreator.mudbackport.block;
 
 import com.google.common.collect.ImmutableList;
+import com.ibm.icu.text.DateFormat;
 import net.mcreator.mudbackport.MudBackportMod;
 import net.minecraft.core.Vec3i;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.*;
+
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
@@ -26,10 +31,16 @@ import java.util.Random;
 import net.mcreator.mudbackport.init.MudBackportModBlocks;
 
 public class AraucariaLeavesBlock extends LeavesBlock {
-
+    public static final BooleanProperty SNOWY = BlockStateProperties.SNOWY;
 	public AraucariaLeavesBlock() {
 		super(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(0.2f).noOcclusion());
-	}
+        this.registerDefaultState(this.stateDefinition.any().setValue(SNOWY, false));
+    }
+
+    @Override
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+        builder.add(SNOWY, DISTANCE, PERSISTENT);
+    }
 
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
