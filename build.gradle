@@ -13,9 +13,16 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'eclipse'
 
+mixin {
+    add sourceSets.main, "mud_backport.refmap.json"
+
+    config "mud_backport.mixins.json"
+}
+
+
 version = '1.0'
-group = 'com.yourname.modid'
-archivesBaseName = 'modid'
+group = 'com.yourname.mud_backport'
+archivesBaseName = 'mud_backport'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 

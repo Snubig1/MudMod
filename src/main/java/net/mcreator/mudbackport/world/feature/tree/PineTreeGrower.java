@@ -1,10 +1,8 @@
 package net.mcreator.mudbackport.world.feature.tree;
 
-import net.mcreator.mudbackport.world.feature.ModConfiguredFeatures;
 import net.minecraft.core.Holder;
 import net.minecraft.data.worldgen.features.TreeFeatures;
 import net.minecraft.world.level.block.grower.AbstractMegaTreeGrower;
-import net.minecraft.world.level.block.grower.AbstractTreeGrower;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import org.jetbrains.annotations.Nullable;
 
