@@ -5,7 +5,8 @@
   "refmap": "mud_backport.refmap.json",
   "minVersion": "0.8.5",
   "mixins": [
-    "MixinPineConfiguredFeature"
+    "MixinPineConfiguredFeature",
+    "MixinSetLeaftypeToPine"
 
   ]
 }
