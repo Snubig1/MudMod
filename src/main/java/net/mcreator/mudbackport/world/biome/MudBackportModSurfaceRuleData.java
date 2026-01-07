@@ -28,13 +28,13 @@ public class MudBackportModSurfaceRuleData
         return SurfaceRules.sequence(
                 SurfaceRules.ifTrue(SurfaceRules.verticalGradient("bedrock_floor", VerticalAnchor.bottom(), VerticalAnchor.aboveBottom(5)), BEDROCK),
 
-                SurfaceRules.ifTrue(SurfaceRules.isBiome(MudBackportModBiomes.ARAUCARIA_FOREST), SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, SurfaceRules.sequence(
+                SurfaceRules.ifTrue(SurfaceRules.isBiome(MudBackportModBiomes.ARAUCARIA_FOREST), SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, SurfaceRules.ifTrue(SurfaceRules.waterBlockCheck(1,1), SurfaceRules.sequence(
                         SurfaceRules.ifTrue(surfaceNoiseAbove(1.5D), MUD_BLOCK),
                         SurfaceRules.ifTrue(surfaceNoise2Above(1.40D), PODZOL),
                         SurfaceRules.ifTrue(surfaceNoise3Above(1.5D), MUD_BLOCK),
                         SurfaceRules.ifTrue(surfaceNoise4Above(1.40D), PODZOL),
                         COARSE_DIRT
-                ))),
+                )))),
                 // Default to a grass and dirt surface
                 SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, grassSurface)
         );

@@ -1,6 +1,6 @@
 package net.mcreator.mudbackport.world.feature.tree;
 
-import net.mcreator.mudbackport.init.ModConfiguredFeatures;
+import net.mcreator.mudbackport.init.MudBackportModConfiguredFeatures;
 import net.minecraft.core.Holder;
 import net.minecraft.world.level.block.grower.AbstractTreeGrower;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
@@ -11,6 +11,6 @@ import java.util.Random;
 public class AraucariaTreeGrower extends AbstractTreeGrower {
     @Override
     protected @Nullable Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(Random p_204307_, boolean p_204308_) {
-        return ModConfiguredFeatures.ARAUCARIA_TREE;
+        return MudBackportModConfiguredFeatures.ARAUCARIA_TREE;
     }
 }
