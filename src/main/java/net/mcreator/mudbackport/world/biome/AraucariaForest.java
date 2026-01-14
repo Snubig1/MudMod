@@ -57,8 +57,6 @@ public class AraucariaForest {
         BiomeDefaultFeatures.addDefaultFlowers(biomeBuilder);
         BiomeDefaultFeatures.addDefaultGrass(biomeBuilder);
         BiomeDefaultFeatures.addDefaultMushrooms(biomeBuilder);
-        BiomeDefaultFeatures.addDesertExtraVegetation(biomeBuilder);
-        BiomeDefaultFeatures.addDesertExtraDecoration(biomeBuilder);
-        return biome(Biome.Precipitation.NONE, Biome.BiomeCategory.TAIGA, 2.0F, 0.0F, spawnBuilder, biomeBuilder, NORMAL_MUSIC);
+        return biome(Biome.Precipitation.RAIN, Biome.BiomeCategory.TAIGA, 2.0F, 0.0F, spawnBuilder, biomeBuilder, NORMAL_MUSIC);
     }
 }
