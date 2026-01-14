@@ -4,7 +4,6 @@ package net.mcreator.mudbackport.init;
 import net.mcreator.mudbackport.world.feature.tree.Custom.AraucariaTrunkPlacer;
 import net.minecraft.core.Registry;
 import net.mcreator.mudbackport.MudBackportMod;
-import net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacerType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

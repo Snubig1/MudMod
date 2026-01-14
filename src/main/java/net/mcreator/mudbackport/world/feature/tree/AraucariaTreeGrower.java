@@ -11,6 +11,8 @@ import java.util.Random;
 public class AraucariaTreeGrower extends AbstractTreeGrower {
     @Override
     protected @Nullable Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(Random p_204307_, boolean p_204308_) {
-        return MudBackportModConfiguredFeatures.ARAUCARIA_TREE;
+        System.out.println(MudBackportModConfiguredFeatures.ARAUCARIA_TREE.getHolder());
+        return MudBackportModConfiguredFeatures.ARAUCARIA_TREE.getHolder().orElseThrow();
+
     }
 }

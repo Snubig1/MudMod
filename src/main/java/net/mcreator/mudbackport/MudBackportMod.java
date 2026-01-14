@@ -13,7 +13,7 @@
  */
 package net.mcreator.mudbackport;
 
-import net.mcreator.mudbackport.init.MudBackportModTrunkPlacerTypes;
+import net.mcreator.mudbackport.init.*;
 import net.mcreator.mudbackport.world.biome.MudBackportModRegion;
 import net.mcreator.mudbackport.world.biome.MudBackportModSurfaceRuleData;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -30,10 +30,6 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.mudbackport.init.MudBackportModTabs;
-import net.mcreator.mudbackport.init.MudBackportModParticleTypes;
-import net.mcreator.mudbackport.init.MudBackportModItems;
-import net.mcreator.mudbackport.init.MudBackportModBlocks;
 import terrablender.api.Regions;
 import terrablender.api.SurfaceRuleManager;
 
@@ -57,8 +53,11 @@ public class MudBackportMod {
 		MudBackportModBlocks.REGISTRY.register(bus);
 
 		MudBackportModItems.REGISTRY.register(bus);
+        MudBackportModConfiguredFeatures.CONFIGURED_FEATURES.register(bus);
+        MudBackportModPlacedFeatures.PLACED_FEATURES.register(bus);
 		MudBackportModParticleTypes.REGISTRY.register(bus);
         MudBackportModTrunkPlacerTypes.TRUNK_PLACER_TYPES.register(bus);
+        MudBackportModFoliagePlacers.FOLIAGE_PLACER_TYPES.register(bus);
 	}
 
     private void commonSetup(final FMLCommonSetupEvent event)
