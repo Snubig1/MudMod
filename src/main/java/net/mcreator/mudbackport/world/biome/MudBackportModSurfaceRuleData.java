@@ -23,20 +23,18 @@ public class MudBackportModSurfaceRuleData
     public static SurfaceRules.RuleSource makeRules()
     {
         SurfaceRules.ConditionSource isAtOrAboveWaterLevel = SurfaceRules.waterBlockCheck(-1, 0);
-        SurfaceRules.RuleSource grassSurface = SurfaceRules.sequence(SurfaceRules.ifTrue(isAtOrAboveWaterLevel, GRASS_BLOCK), DIRT);
+        //SurfaceRules.RuleSource grassSurface = SurfaceRules.sequence(SurfaceRules.ifTrue(isAtOrAboveWaterLevel, GRASS_BLOCK), DIRT);
 
         return SurfaceRules.sequence(
-                SurfaceRules.ifTrue(SurfaceRules.verticalGradient("bedrock_floor", VerticalAnchor.bottom(), VerticalAnchor.aboveBottom(5)), BEDROCK),
+                //SurfaceRules.ifTrue(SurfaceRules.verticalGradient("bedrock_floor", VerticalAnchor.bottom(), VerticalAnchor.aboveBottom(5)), BEDROCK),
 
-                SurfaceRules.ifTrue(SurfaceRules.isBiome(MudBackportModBiomes.ARAUCARIA_FOREST), SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, SurfaceRules.ifTrue(SurfaceRules.waterBlockCheck(1,1), SurfaceRules.sequence(
+                SurfaceRules.ifTrue(SurfaceRules.isBiome(MudBackportModBiomes.ARAUCARIA_FOREST), SurfaceRules.ifTrue(SurfaceRules.yBlockCheck(VerticalAnchor.absolute(63),1),SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, SurfaceRules.ifTrue(SurfaceRules.waterBlockCheck(1,1), SurfaceRules.sequence(
                         SurfaceRules.ifTrue(surfaceNoiseAbove(1.5D), MUD_BLOCK),
                         SurfaceRules.ifTrue(surfaceNoise2Above(1.40D), PODZOL),
                         SurfaceRules.ifTrue(surfaceNoise3Above(1.5D), MUD_BLOCK),
                         SurfaceRules.ifTrue(surfaceNoise4Above(1.40D), PODZOL),
                         COARSE_DIRT
-                )))),
-                // Default to a grass and dirt surface
-                SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, grassSurface)
+                )))))
         );
     }
 
