@@ -3,29 +3,37 @@ package net.mcreator.mudbackport.init;
 import net.mcreator.mudbackport.MudBackportMod;
 import net.mcreator.mudbackport.world.feature.tree.Custom.AraucariaFoliagePlacer;
 import net.mcreator.mudbackport.world.feature.tree.Custom.AraucariaTrunkPlacer;
-import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
-import net.minecraft.data.worldgen.features.FeatureUtils;
+import net.minecraft.data.worldgen.features.TreeFeatures;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.placement.TreePlacements;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.util.random.SimpleWeightedRandomList;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.levelgen.feature.RandomSelectorFeature;
 import net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature;
 import net.minecraft.world.level.levelgen.feature.configurations.RandomFeatureConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.VegetationPatchConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.BushFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.PineFoliagePlacer;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.RandomSpreadFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.SpruceFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
+import net.minecraft.world.level.levelgen.placement.CaveSurface;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.List;
+
 
 public class MudBackportModConfiguredFeatures {
     public static final DeferredRegister<ConfiguredFeature<?,?>> CONFIGURED_FEATURES = DeferredRegister.create(Registry.CONFIGURED_FEATURE_REGISTRY, MudBackportMod.MODID);
@@ -54,6 +62,45 @@ public class MudBackportModConfiguredFeatures {
                     BlockStateProvider.simple(Blocks.SPRUCE_LEAVES),
                     new SpruceFoliagePlacer(UniformInt.of(2, 3), UniformInt.of(0, 2), UniformInt.of(1, 2)),
                     new TwoLayersFeatureSize(2, 0, 2)).ignoreVines().build()));
+
+
+    public static final RegistryObject<ConfiguredFeature<?, ?>> ARAUCARIA_BUSH =
+            CONFIGURED_FEATURES.register("araucaria_bush", () -> new ConfiguredFeature<>(Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                    BlockStateProvider.simple(Blocks.SPRUCE_LOG),
+                    new StraightTrunkPlacer(1, 0, 0),
+                    BlockStateProvider.simple(Blocks.BIRCH_LEAVES),
+                    new BushFoliagePlacer(ConstantInt.of(2),ConstantInt.of(1),2),
+                    new TwoLayersFeatureSize(0, 0, 0)).ignoreVines().build()));
+/*
+    public static final RegistryObject<ConfiguredFeature<?, ?>> BRAMBLE_SMALL_FOLIAGE =
+            CONFIGURED_FEATURES.register("bramble_small_foliage", () -> new ConfiguredFeature<>(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(
+                    new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
+                            .add(Blocks.SWEET_BERRY_BUSH.defaultBlockState(),4)
+                            .add(Blocks.FERN.defaultBlockState(),3)
+                            .add(Blocks.LARGE_FERN.defaultBlockState(),3)
+                            .add(Blocks.MOSS_CARPET.defaultBlockState(),2))
+                    )));
+
+    public static final RegistryObject<ConfiguredFeature<?, ?>> BRAMBLE_FOLIAGE =
+            CONFIGURED_FEATURES.register("bramble_foliage", () -> new ConfiguredFeature<>(Feature.RANDOM_SELECTOR, new RandomFeatureConfiguration(
+                    List.of(new WeightedPlacedFeature(PlacementUtils.inlinePlaced(BRAMBLE_SMALL_FOLIAGE.getHolder().orElseThrow()), 0.93F)),
+                    PlacementUtils.inlinePlaced(ARAUCARIA_BUSH.getHolder().orElseThrow()))
+
+            ));*/
+
+    public static final RegistryObject<ConfiguredFeature<?, ?>> ARAUCARIA_BRAMBLES =
+            CONFIGURED_FEATURES.register("araucaria_bramples", () -> new ConfiguredFeature<>(Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(
+                    BlockTags.DIRT,
+                    new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(Blocks.MOSS_BLOCK.defaultBlockState(),2).add(Blocks.COARSE_DIRT.defaultBlockState(),4).add(Blocks.PODZOL.defaultBlockState(),4).add(MudBackportModBlocks.MUD.get().defaultBlockState(),4)),
+                    PlacementUtils.inlinePlaced(ARAUCARIA_BUSH.getHolder().orElseThrow()),
+                    CaveSurface.FLOOR,
+                    ConstantInt.of(1),
+                    0.0F,
+                    5,
+                    0.04F,
+                    UniformInt.of(6, 9),
+                    0.3F
+            )));
 
 
 }

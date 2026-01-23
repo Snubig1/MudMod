@@ -51,7 +51,7 @@ public class MudBackportModPlacedFeatures {
                             BlockPos.ZERO)),
                     BiomeFilter.biome())));
 
-
+    public static final RegistryObject<PlacedFeature> ARAUCARIA_BRAMBLES = PLACED_FEATURES.register("araucaria_brambles", () -> PlacementUtils.inlinePlaced(MudBackportModConfiguredFeatures.ARAUCARIA_BRAMBLES.getHolder().orElseThrow()).value());
 
 
 
