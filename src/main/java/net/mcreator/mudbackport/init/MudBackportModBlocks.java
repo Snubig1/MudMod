@@ -5,6 +5,10 @@
 package net.mcreator.mudbackport.init;
 
 import net.mcreator.mudbackport.block.*;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerPotBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.Material;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
@@ -59,8 +63,10 @@ public class MudBackportModBlocks {
 	public static final RegistryObject<Block> ARAUCARIA_BRANCHES = REGISTRY.register("araucaria_branches", AraucariaBranchesBlock::new);;
 	public static final RegistryObject<Block> STRIPPED_ARAUCARIA_LOG = REGISTRY.register("stripped_araucaria_log", StrippedAraucariaLogBlock::new);
 	public static final RegistryObject<Block> STRIPPED_ARAUCARIA_WOOD = REGISTRY.register("stripped_araucaria_wood", StrippedAraucariaWoodBlock::new);
+	//public static final RegistryObject<Block> POTTED_OAK_SAPLING = REGISTRY.register("potted_pine_sapling", new FlowerPotBlock(null, MudBackportModBlocks.PINE_LEAVES, BlockBehaviour.Properties.of(Material.DECORATION).instabreak().noOcclusion()));
 
-    //public static final RegistryObject<Block> STRIPPED_ARAUCARIA_WOOD = REGISTRY.register("stripped_araucaria_wood", () -> new StrippedAraucariaWoodBlock());
+
+	//public static final RegistryObject<Block> STRIPPED_ARAUCARIA_WOOD = REGISTRY.register("stripped_araucaria_wood", () -> new StrippedAraucariaWoodBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

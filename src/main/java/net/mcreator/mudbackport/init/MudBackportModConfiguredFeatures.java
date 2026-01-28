@@ -71,7 +71,7 @@ public class MudBackportModConfiguredFeatures {
                     BlockStateProvider.simple(Blocks.BIRCH_LEAVES),
                     new BushFoliagePlacer(ConstantInt.of(2),ConstantInt.of(1),2),
                     new TwoLayersFeatureSize(0, 0, 0)).ignoreVines().build()));
-/*
+
     public static final RegistryObject<ConfiguredFeature<?, ?>> BRAMBLE_SMALL_FOLIAGE =
             CONFIGURED_FEATURES.register("bramble_small_foliage", () -> new ConfiguredFeature<>(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(
                     new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
@@ -86,18 +86,18 @@ public class MudBackportModConfiguredFeatures {
                     List.of(new WeightedPlacedFeature(PlacementUtils.inlinePlaced(BRAMBLE_SMALL_FOLIAGE.getHolder().orElseThrow()), 0.93F)),
                     PlacementUtils.inlinePlaced(ARAUCARIA_BUSH.getHolder().orElseThrow()))
 
-            ));*/
+            ));
 
     public static final RegistryObject<ConfiguredFeature<?, ?>> ARAUCARIA_BRAMBLES =
             CONFIGURED_FEATURES.register("araucaria_bramples", () -> new ConfiguredFeature<>(Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(
                     BlockTags.DIRT,
                     new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(Blocks.MOSS_BLOCK.defaultBlockState(),2).add(Blocks.COARSE_DIRT.defaultBlockState(),4).add(Blocks.PODZOL.defaultBlockState(),4).add(MudBackportModBlocks.MUD.get().defaultBlockState(),4)),
-                    PlacementUtils.inlinePlaced(ARAUCARIA_BUSH.getHolder().orElseThrow()),
+                    PlacementUtils.inlinePlaced(BRAMBLE_FOLIAGE.getHolder().orElseThrow()),
                     CaveSurface.FLOOR,
                     ConstantInt.of(1),
                     0.0F,
                     5,
-                    0.04F,
+                    0.4F,
                     UniformInt.of(6, 9),
                     0.3F
             )));
