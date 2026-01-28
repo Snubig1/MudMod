@@ -3,12 +3,15 @@ package net.mcreator.mudbackport.init;
 
 import net.mcreator.mudbackport.MudBackportMod;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
+import net.minecraft.data.worldgen.features.MiscOverworldFeatures;
 import net.minecraft.data.worldgen.features.TreeFeatures;
 import net.minecraft.data.worldgen.features.VegetationFeatures;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
+import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.placement.*;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -52,6 +55,7 @@ public class MudBackportModPlacedFeatures {
                     BiomeFilter.biome())));
 
     public static final RegistryObject<PlacedFeature> ARAUCARIA_BRAMBLES = PLACED_FEATURES.register("araucaria_brambles", () -> PlacementUtils.inlinePlaced(MudBackportModConfiguredFeatures.ARAUCARIA_BRAMBLES.getHolder().orElseThrow()).value());
+    public static final RegistryObject<PlacedFeature> ARAUCARIA_COVERING = PLACED_FEATURES.register("araucaria_covering", () -> PlacementUtils.inlinePlaced(MudBackportModConfiguredFeatures.ARAUCARIA_COVERING.getHolder().orElseThrow()).value());
 
 
 

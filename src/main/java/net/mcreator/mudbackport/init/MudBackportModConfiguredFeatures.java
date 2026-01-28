@@ -3,6 +3,7 @@ package net.mcreator.mudbackport.init;
 import net.mcreator.mudbackport.MudBackportMod;
 import net.mcreator.mudbackport.world.feature.tree.Custom.AraucariaFoliagePlacer;
 import net.mcreator.mudbackport.world.feature.tree.Custom.AraucariaTrunkPlacer;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
 import net.minecraft.data.worldgen.features.TreeFeatures;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
@@ -10,17 +11,16 @@ import net.minecraft.data.worldgen.placement.TreePlacements;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.random.SimpleWeightedRandomList;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.util.valueproviders.IntProvider;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.predicate.BlockPredicate;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.RandomSelectorFeature;
 import net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature;
-import net.minecraft.world.level.levelgen.feature.configurations.RandomFeatureConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.VegetationPatchConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.*;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BushFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.PineFoliagePlacer;
@@ -33,6 +33,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.List;
+import java.util.Random;
 
 
 public class MudBackportModConfiguredFeatures {
@@ -85,7 +86,6 @@ public class MudBackportModConfiguredFeatures {
             CONFIGURED_FEATURES.register("bramble_foliage", () -> new ConfiguredFeature<>(Feature.RANDOM_SELECTOR, new RandomFeatureConfiguration(
                     List.of(new WeightedPlacedFeature(PlacementUtils.inlinePlaced(BRAMBLE_SMALL_FOLIAGE.getHolder().orElseThrow()), 0.93F)),
                     PlacementUtils.inlinePlaced(ARAUCARIA_BUSH.getHolder().orElseThrow()))
-
             ));
 
     public static final RegistryObject<ConfiguredFeature<?, ?>> ARAUCARIA_BRAMBLES =
@@ -99,6 +99,24 @@ public class MudBackportModConfiguredFeatures {
                     5,
                     0.4F,
                     UniformInt.of(6, 9),
+                    0.3F
+            )));
+
+    public static final RegistryObject<ConfiguredFeature<?, ?>> NO_OP =
+            CONFIGURED_FEATURES.register("no_op", () -> new ConfiguredFeature<>(Feature.NO_OP, new NoneFeatureConfiguration()));
+
+
+    public static final RegistryObject<ConfiguredFeature<?, ?>> ARAUCARIA_COVERING =
+            CONFIGURED_FEATURES.register("araucaria_covering", () -> new ConfiguredFeature<>(Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(
+                    BlockTags.DIRT,
+                    new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(Blocks.MOSS_BLOCK.defaultBlockState(),2).add(Blocks.COARSE_DIRT.defaultBlockState(),4).add(Blocks.PODZOL.defaultBlockState(),4).add(MudBackportModBlocks.MUD.get().defaultBlockState(),4)),
+                    PlacementUtils.inlinePlaced(NO_OP.getHolder().orElseThrow()),
+                    CaveSurface.FLOOR,
+                    ConstantInt.of(1),
+                    0.0F,
+                    5,
+                    0.4F,
+                    ConstantInt.of(16),
                     0.3F
             )));
 
