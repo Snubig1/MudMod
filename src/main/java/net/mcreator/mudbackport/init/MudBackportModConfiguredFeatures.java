@@ -14,6 +14,7 @@ import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.IntProvider;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.predicate.BlockPredicate;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
@@ -76,11 +77,19 @@ public class MudBackportModConfiguredFeatures {
     public static final RegistryObject<ConfiguredFeature<?, ?>> BRAMBLE_SMALL_FOLIAGE =
             CONFIGURED_FEATURES.register("bramble_small_foliage", () -> new ConfiguredFeature<>(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(
                     new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
-                            .add(Blocks.SWEET_BERRY_BUSH.defaultBlockState(),4)
+                            .add(Blocks.SWEET_BERRY_BUSH.defaultBlockState().setValue(SweetBerryBushBlock.AGE, Integer.valueOf(3)),4)
                             .add(Blocks.FERN.defaultBlockState(),3)
                             .add(Blocks.LARGE_FERN.defaultBlockState(),3)
                             .add(Blocks.MOSS_CARPET.defaultBlockState(),2))
                     )));
+
+    public static final RegistryObject<ConfiguredFeature<?, ?>> COVERING_SMALL_FOLIAGE =
+            CONFIGURED_FEATURES.register("covering_small_foliage", () -> new ConfiguredFeature<>(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(
+                    new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
+                            .add(Blocks.FERN.defaultBlockState(),8)
+                            .add(Blocks.LARGE_FERN.defaultBlockState(),2)
+                            .add(Blocks.GRASS.defaultBlockState(),1)
+            ))));
 
     public static final RegistryObject<ConfiguredFeature<?, ?>> BRAMBLE_FOLIAGE =
             CONFIGURED_FEATURES.register("bramble_foliage", () -> new ConfiguredFeature<>(Feature.RANDOM_SELECTOR, new RandomFeatureConfiguration(
@@ -108,15 +117,15 @@ public class MudBackportModConfiguredFeatures {
 
     public static final RegistryObject<ConfiguredFeature<?, ?>> ARAUCARIA_COVERING =
             CONFIGURED_FEATURES.register("araucaria_covering", () -> new ConfiguredFeature<>(Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(
-                    BlockTags.DIRT,
-                    new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(Blocks.MOSS_BLOCK.defaultBlockState(),2).add(Blocks.COARSE_DIRT.defaultBlockState(),4).add(Blocks.PODZOL.defaultBlockState(),4).add(MudBackportModBlocks.MUD.get().defaultBlockState(),4)),
-                    PlacementUtils.inlinePlaced(NO_OP.getHolder().orElseThrow()),
+                    MudBackportModTags.ARAUCARIA_GROUND_REPLACEABLE,
+                    new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(Blocks.COARSE_DIRT.defaultBlockState(),7).add(Blocks.PODZOL.defaultBlockState(),5).add(MudBackportModBlocks.MUD.get().defaultBlockState(),3)),
+                    PlacementUtils.inlinePlaced(COVERING_SMALL_FOLIAGE.getHolder().orElseThrow()),
                     CaveSurface.FLOOR,
-                    ConstantInt.of(1),
+                    ConstantInt.of(2),
                     0.0F,
-                    5,
-                    0.4F,
-                    ConstantInt.of(16),
+                    32,
+                    0.2F,
+                    ConstantInt.of(32),
                     0.3F
             )));
 

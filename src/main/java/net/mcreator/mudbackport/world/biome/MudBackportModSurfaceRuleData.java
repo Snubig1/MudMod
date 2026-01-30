@@ -18,6 +18,7 @@ public class MudBackportModSurfaceRuleData
     private static final SurfaceRules.RuleSource MUD_BLOCK = makeStateRule(MudBackportModBlocks.MUD.get());
     private static final SurfaceRules.RuleSource BEDROCK = makeStateRule(Blocks.BEDROCK);
     private static final SurfaceRules.RuleSource COARSE_DIRT = makeStateRule(Blocks.COARSE_DIRT);
+    private static final SurfaceRules.RuleSource ROOTED_DIRT = makeStateRule(Blocks.ROOTED_DIRT);
     private static final SurfaceRules.RuleSource PODZOL = makeStateRule(Blocks.PODZOL);
 
     public static SurfaceRules.RuleSource makeRules()
@@ -28,12 +29,8 @@ public class MudBackportModSurfaceRuleData
         return SurfaceRules.sequence(
                 //SurfaceRules.ifTrue(SurfaceRules.verticalGradient("bedrock_floor", VerticalAnchor.bottom(), VerticalAnchor.aboveBottom(5)), BEDROCK),
 
-                SurfaceRules.ifTrue(SurfaceRules.isBiome(MudBackportModBiomes.ARAUCARIA_FOREST), SurfaceRules.ifTrue(SurfaceRules.yBlockCheck(VerticalAnchor.absolute(63),1),SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, SurfaceRules.ifTrue(SurfaceRules.waterBlockCheck(1,1), SurfaceRules.sequence(
-                        SurfaceRules.ifTrue(surfaceNoiseAbove(1.5D), MUD_BLOCK),
-                        SurfaceRules.ifTrue(surfaceNoise2Above(1.40D), PODZOL),
-                        SurfaceRules.ifTrue(surfaceNoise3Above(1.5D), MUD_BLOCK),
-                        SurfaceRules.ifTrue(surfaceNoise4Above(1.40D), PODZOL),
-                        COARSE_DIRT
+                SurfaceRules.ifTrue(SurfaceRules.isBiome(MudBackportModBiomes.ARAUCARIA_FOREST), SurfaceRules.ifTrue(SurfaceRules.yBlockCheck(VerticalAnchor.absolute(63),3),SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, SurfaceRules.ifTrue(SurfaceRules.waterBlockCheck(1,1), SurfaceRules.sequence(
+                        ROOTED_DIRT
                 )))))
         );
     }

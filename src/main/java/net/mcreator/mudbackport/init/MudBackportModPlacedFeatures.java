@@ -9,7 +9,13 @@ import net.minecraft.data.worldgen.features.MiscOverworldFeatures;
 import net.minecraft.data.worldgen.features.TreeFeatures;
 import net.minecraft.data.worldgen.features.VegetationFeatures;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.util.random.SimpleWeightedRandomList;
+import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.util.valueproviders.IntProvider;
+import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.util.valueproviders.WeightedListInt;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.placement.*;
@@ -54,8 +60,22 @@ public class MudBackportModPlacedFeatures {
                             BlockPos.ZERO)),
                     BiomeFilter.biome())));
 
-    public static final RegistryObject<PlacedFeature> ARAUCARIA_BRAMBLES = PLACED_FEATURES.register("araucaria_brambles", () -> PlacementUtils.inlinePlaced(MudBackportModConfiguredFeatures.ARAUCARIA_BRAMBLES.getHolder().orElseThrow()).value());
-    public static final RegistryObject<PlacedFeature> ARAUCARIA_COVERING = PLACED_FEATURES.register("araucaria_covering", () -> PlacementUtils.inlinePlaced(MudBackportModConfiguredFeatures.ARAUCARIA_COVERING.getHolder().orElseThrow()).value());
+    public static final RegistryObject<PlacedFeature> ARAUCARIA_COVERING = PLACED_FEATURES.register("araucaria_covering", () -> new PlacedFeature(
+            MudBackportModConfiguredFeatures.ARAUCARIA_COVERING.getHolder().orElseThrow(),
+            List.of(CountPlacement.of(1),
+                    InSquarePlacement.spread(),
+                    SurfaceWaterDepthFilter.forMaxDepth(0),
+                    PlacementUtils.HEIGHTMAP_OCEAN_FLOOR,
+                    BiomeFilter.biome())));
+
+    public static final RegistryObject<PlacedFeature> ARAUCARIA_BRAMBLES = PLACED_FEATURES.register("araucaria_brambles", () -> new PlacedFeature(
+            MudBackportModConfiguredFeatures.ARAUCARIA_BRAMBLES.getHolder().orElseThrow(),
+            List.of(
+                    RarityFilter.onAverageOnceEvery(10),
+                    InSquarePlacement.spread(),
+                    SurfaceWaterDepthFilter.forMaxDepth(0),
+                    PlacementUtils.HEIGHTMAP_OCEAN_FLOOR,
+                    BiomeFilter.biome())));
 
 
 
