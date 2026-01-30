@@ -5,6 +5,7 @@ import net.mcreator.mudbackport.MudBackportMod;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
+import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.features.MiscOverworldFeatures;
 import net.minecraft.data.worldgen.features.TreeFeatures;
 import net.minecraft.data.worldgen.features.VegetationFeatures;
@@ -87,5 +88,6 @@ public class MudBackportModPlacedFeatures {
                             BlockPos.ZERO)),
                     BiomeFilter.biome())));
 
+    public static final RegistryObject<PlacedFeature> LILY_OF_THE_VALEY_PATCH = PLACED_FEATURES.register("lily_of_the_valey_patch", () -> PlacementUtils.inlinePlaced(MudBackportModConfiguredFeatures.LILY_OF_THE_VALEY_PATCH.getHolder().orElseThrow()).value());
 
 }

@@ -129,6 +129,14 @@ public class MudBackportModConfiguredFeatures {
                     0.3F
             )));
 
+    public static final RegistryObject<ConfiguredFeature<?, ?>> LILY_OF_THE_VALEY_PATCH =
+            CONFIGURED_FEATURES.register("lily_of_the_valey_patch", () -> new ConfiguredFeature<>(Feature.RANDOM_PATCH, new RandomPatchConfiguration(
+                    64,
+                    6,
+                    2,
+                    PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(Blocks.LILY_OF_THE_VALLEY)
+            )))));
+
     public static final RegistryObject<ConfiguredFeature<?, ?>> ARAUCARIA_TREE_BUSH =
             CONFIGURED_FEATURES.register("araucaria_tree_bush", () -> new ConfiguredFeature<>(Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                     BlockStateProvider.simple(Blocks.SPRUCE_LOG),
