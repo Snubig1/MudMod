@@ -121,13 +121,19 @@ public class MudBackportModConfiguredFeatures {
                     new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(Blocks.COARSE_DIRT.defaultBlockState(),7).add(Blocks.PODZOL.defaultBlockState(),5).add(MudBackportModBlocks.MUD.get().defaultBlockState(),3)),
                     PlacementUtils.inlinePlaced(COVERING_SMALL_FOLIAGE.getHolder().orElseThrow()),
                     CaveSurface.FLOOR,
-                    ConstantInt.of(2),
+                    ConstantInt.of(1),
                     0.0F,
                     32,
-                    0.2F,
+                    0.15F,
                     ConstantInt.of(32),
                     0.3F
             )));
 
-
+    public static final RegistryObject<ConfiguredFeature<?, ?>> ARAUCARIA_TREE_BUSH =
+            CONFIGURED_FEATURES.register("araucaria_tree_bush", () -> new ConfiguredFeature<>(Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                    BlockStateProvider.simple(Blocks.SPRUCE_LOG),
+                    new StraightTrunkPlacer(2, 1, 0),
+                    BlockStateProvider.simple(Blocks.SPRUCE_LEAVES),
+                    new PineFoliagePlacer(ConstantInt.of(1), ConstantInt.of(1), UniformInt.of(2, 3)),
+                    new TwoLayersFeatureSize(0, 0, 0)).ignoreVines().build()));
 }

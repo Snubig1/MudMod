@@ -71,12 +71,21 @@ public class MudBackportModPlacedFeatures {
     public static final RegistryObject<PlacedFeature> ARAUCARIA_BRAMBLES = PLACED_FEATURES.register("araucaria_brambles", () -> new PlacedFeature(
             MudBackportModConfiguredFeatures.ARAUCARIA_BRAMBLES.getHolder().orElseThrow(),
             List.of(
-                    RarityFilter.onAverageOnceEvery(10),
+                    RarityFilter.onAverageOnceEvery(6),
                     InSquarePlacement.spread(),
                     SurfaceWaterDepthFilter.forMaxDepth(0),
                     PlacementUtils.HEIGHTMAP_OCEAN_FLOOR,
                     BiomeFilter.biome())));
 
+    public static final RegistryObject<PlacedFeature> TREES_ARAUCARIA_TREE_BUSH = PLACED_FEATURES.register("trees_araucaria_tree_bush", () -> new PlacedFeature(
+            MudBackportModConfiguredFeatures.ARAUCARIA_TREE_BUSH.getHolder().orElseThrow(),
+            List.of(PlacementUtils.countExtra(10, 0.1F, 5),
+                    InSquarePlacement.spread(),
+                    SurfaceWaterDepthFilter.forMaxDepth(0),
+                    PlacementUtils.HEIGHTMAP_OCEAN_FLOOR,
+                    BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(Blocks.OAK_SAPLING.defaultBlockState(),
+                            BlockPos.ZERO)),
+                    BiomeFilter.biome())));
 
 
 }

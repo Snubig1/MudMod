@@ -51,6 +51,7 @@ public class AraucariaForest {
         BiomeGenerationSettings.Builder biomeBuilder = new BiomeGenerationSettings.Builder();
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, MudBackportModPlacedFeatures.ARAUCARIA_BRAMBLES.getHolder().orElseThrow());
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, MudBackportModPlacedFeatures.ARAUCARIA_COVERING.getHolder().orElseThrow());
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, MudBackportModPlacedFeatures.TREES_ARAUCARIA_TREE_BUSH.getHolder().orElseThrow());
         BiomeDefaultFeatures.addFossilDecoration(biomeBuilder);
         globalOverworldGeneration(biomeBuilder);
         BiomeDefaultFeatures.addMossyStoneBlock(biomeBuilder);
