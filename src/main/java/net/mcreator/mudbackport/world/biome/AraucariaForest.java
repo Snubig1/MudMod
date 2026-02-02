@@ -56,6 +56,7 @@ public class AraucariaForest {
         globalOverworldGeneration(biomeBuilder);
         BiomeDefaultFeatures.addMossyStoneBlock(biomeBuilder);
         BiomeDefaultFeatures.addFerns(biomeBuilder);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, MudBackportModPlacedFeatures.LILY_OF_THE_VALEY_PATCH.getHolder().orElseThrow());
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
         BiomeDefaultFeatures.addDefaultSoftDisks(biomeBuilder);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, MudBackportModPlacedFeatures.TREES_ARAUCARIA_ARAUCARIA.getHolder().orElseThrow());

@@ -88,6 +88,15 @@ public class MudBackportModPlacedFeatures {
                             BlockPos.ZERO)),
                     BiomeFilter.biome())));
 
-    public static final RegistryObject<PlacedFeature> LILY_OF_THE_VALEY_PATCH = PLACED_FEATURES.register("lily_of_the_valey_patch", () -> PlacementUtils.inlinePlaced(MudBackportModConfiguredFeatures.LILY_OF_THE_VALEY_PATCH.getHolder().orElseThrow()).value());
+    //public static final RegistryObject<PlacedFeature> LILY_OF_THE_VALEY_PATCH = PLACED_FEATURES.register("lily_of_the_valey_patch", () -> PlacementUtils.inlinePlaced(MudBackportModConfiguredFeatures.LILY_OF_THE_VALEY_PATCH.getHolder().orElseThrow()).value());
+
+    public static final RegistryObject<PlacedFeature> LILY_OF_THE_VALEY_PATCH = PLACED_FEATURES.register("lily_of_the_valey_patch", () -> new PlacedFeature(
+            MudBackportModConfiguredFeatures.LILY_OF_THE_VALEY_PATCH.getHolder().orElseThrow(),
+            List.of(
+                    RarityFilter.onAverageOnceEvery(6),
+                    InSquarePlacement.spread(),
+                    SurfaceWaterDepthFilter.forMaxDepth(0),
+                    PlacementUtils.HEIGHTMAP_OCEAN_FLOOR,
+                    BiomeFilter.biome())));
 
 }
