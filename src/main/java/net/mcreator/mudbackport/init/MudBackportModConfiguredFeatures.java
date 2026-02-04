@@ -116,7 +116,7 @@ public class MudBackportModConfiguredFeatures {
 
 
     public static final RegistryObject<ConfiguredFeature<?, ?>> ARAUCARIA_COVERING =
-            CONFIGURED_FEATURES.register("araucaria_covering", () -> new ConfiguredFeature<>(Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(
+            CONFIGURED_FEATURES.register("araucaria_covering", () -> new ConfiguredFeature<>(MudBackportModFeatures.PER_BIOME_VEGETATION_PATCH.get(), new VegetationPatchConfiguration(
                     MudBackportModTags.ARAUCARIA_GROUND_REPLACEABLE,
                     new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(Blocks.COARSE_DIRT.defaultBlockState(),7).add(Blocks.PODZOL.defaultBlockState(),5).add(MudBackportModBlocks.MUD.get().defaultBlockState(),3)),
                     PlacementUtils.inlinePlaced(COVERING_SMALL_FOLIAGE.getHolder().orElseThrow()),

@@ -57,6 +57,7 @@ public class MudBackportMod {
         MudBackportModPlacedFeatures.PLACED_FEATURES.register(bus);
 		MudBackportModParticleTypes.REGISTRY.register(bus);
         MudBackportModTrunkPlacerTypes.TRUNK_PLACER_TYPES.register(bus);
+        MudBackportModFeatures.REGISTRY.register(bus);
         MudBackportModFoliagePlacers.FOLIAGE_PLACER_TYPES.register(bus);
 	}
 

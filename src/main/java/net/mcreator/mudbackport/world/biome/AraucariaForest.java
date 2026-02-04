@@ -51,6 +51,7 @@ public class AraucariaForest {
         BiomeGenerationSettings.Builder biomeBuilder = new BiomeGenerationSettings.Builder();
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, MudBackportModPlacedFeatures.ARAUCARIA_BRAMBLES.getHolder().orElseThrow());
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, MudBackportModPlacedFeatures.ARAUCARIA_COVERING.getHolder().orElseThrow());
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, MudBackportModPlacedFeatures.TREES_ARAUCARIA_ARAUCARIA.getHolder().orElseThrow());
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, MudBackportModPlacedFeatures.TREES_ARAUCARIA_TREE_BUSH.getHolder().orElseThrow());
         BiomeDefaultFeatures.addFossilDecoration(biomeBuilder);
         globalOverworldGeneration(biomeBuilder);
@@ -59,7 +60,6 @@ public class AraucariaForest {
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, MudBackportModPlacedFeatures.LILY_OF_THE_VALEY_PATCH.getHolder().orElseThrow());
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
         BiomeDefaultFeatures.addDefaultSoftDisks(biomeBuilder);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, MudBackportModPlacedFeatures.TREES_ARAUCARIA_ARAUCARIA.getHolder().orElseThrow());
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, MudBackportModPlacedFeatures.TREES_ARAUCARIA_PINE.getHolder().orElseThrow());
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, MudBackportModPlacedFeatures.TREES_ARAUCARIA_SPRUCE.getHolder().orElseThrow());
         BiomeDefaultFeatures.addTaigaGrass(biomeBuilder);
