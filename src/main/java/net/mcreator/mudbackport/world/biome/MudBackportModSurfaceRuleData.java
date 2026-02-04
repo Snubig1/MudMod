@@ -30,7 +30,7 @@ public class MudBackportModSurfaceRuleData
                 //SurfaceRules.ifTrue(SurfaceRules.verticalGradient("bedrock_floor", VerticalAnchor.bottom(), VerticalAnchor.aboveBottom(5)), BEDROCK),
 
                 SurfaceRules.ifTrue(SurfaceRules.isBiome(MudBackportModBiomes.ARAUCARIA_FOREST), SurfaceRules.ifTrue(SurfaceRules.yBlockCheck(VerticalAnchor.absolute(63),3),SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, SurfaceRules.ifTrue(SurfaceRules.waterBlockCheck(1,1), SurfaceRules.sequence(
-                        DIRT
+                        GRASS_BLOCK
                 )))))
         );
     }
