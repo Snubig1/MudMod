@@ -33,7 +33,7 @@ public class MudBackportModPlacedFeatures {
 
     public static final RegistryObject<PlacedFeature> TREES_ARAUCARIA_ARAUCARIA = PLACED_FEATURES.register("trees_araucaria_araucaria", () -> new PlacedFeature(
             MudBackportModConfiguredFeatures.ARAUCARIA_TREE.getHolder().orElseThrow(),
-            List.of(PlacementUtils.countExtra(8, 0.1F, 1),
+            List.of(PlacementUtils.countExtra(10, 0.1F, 2),
                     InSquarePlacement.spread(),
                     SurfaceWaterDepthFilter.forMaxDepth(0),
                     PlacementUtils.HEIGHTMAP_OCEAN_FLOOR,
@@ -43,7 +43,7 @@ public class MudBackportModPlacedFeatures {
 
     public static final RegistryObject<PlacedFeature> TREES_ARAUCARIA_PINE = PLACED_FEATURES.register("trees_araucaria_pine", () -> new PlacedFeature(
             MudBackportModConfiguredFeatures.ARAUCARIA_PINE_TREE.getHolder().orElseThrow(),
-            List.of(PlacementUtils.countExtra(4, 0.25F, 5),
+            List.of(PlacementUtils.countExtra(5, 0.25F, 5),
                     InSquarePlacement.spread(),
                     SurfaceWaterDepthFilter.forMaxDepth(0),
                     PlacementUtils.HEIGHTMAP_OCEAN_FLOOR,
@@ -53,7 +53,7 @@ public class MudBackportModPlacedFeatures {
 
     public static final RegistryObject<PlacedFeature> TREES_ARAUCARIA_SPRUCE = PLACED_FEATURES.register("trees_araucaria_spruce", () -> new PlacedFeature(
             MudBackportModConfiguredFeatures.ARAUCARIA_SPRUCE_TREE.getHolder().orElseThrow(),
-            List.of(PlacementUtils.countExtra(2, 0.2F, 3),
+            List.of(PlacementUtils.countExtra(1, 0.2F, 2),
                     InSquarePlacement.spread(),
                     SurfaceWaterDepthFilter.forMaxDepth(0),
                     PlacementUtils.HEIGHTMAP_OCEAN_FLOOR,
